@@ -17,14 +17,15 @@ div.Welcome {
     background: #ffffff;
 }
 
-div.Placeholder{
-	margin-top: 5em;
-	margin-right: 10em;
-	margin-bottom: 5em;
-	margin-left: 10em;
+div.Section{
 	background-color: #ffffff;
-	height: 40vh;
 	width: 100%;
+}
+
+div.SectionBreak{
+	background-color: #404040;
+	width: 100%;
+	height: 5vh;
 }
 
 h1{
