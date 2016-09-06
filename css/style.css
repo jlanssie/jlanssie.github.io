@@ -1,9 +1,11 @@
 div{
-	padding-right: 10em;
-	padding-left: 10em;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	margin-top: 5em;
+	margin-right: 10em;
+	margin-bottom: 5em;
+	margin-left: 10em;
 	background-color: #ffffff;
+	height: 30vh;
+	width: 100%;
 }
 
 div.Header {
@@ -20,8 +22,17 @@ div.Welcome {
     position: relative;
     overflow: hidden;
     height: 80vh;
+    width: 100%;
     text-align: center;
     background: #ffffff;
+}
+
+h1{
+	font-family: Futura;
+	font-size: 3 em;
+	font-weight: 50;
+	line-height: 2.25em;
+	color: #404040;
 }
 
 p {
