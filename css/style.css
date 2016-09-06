@@ -1,3 +1,11 @@
+div{
+	padding-right: 10em;
+	padding-left: 10em;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	background-color: #ffffff;
+}
+
 div.Header {
 	color: #ffffff;
 	width: 100%;
