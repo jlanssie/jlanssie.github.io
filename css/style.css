@@ -10,8 +10,8 @@ div.Header {
 
 div.Welcome {
     position: relative;
-    overflow-x: hidden;
-    height: 100vh;
+    overflow: hidden;
+    height: 80vh;
     width: 100%;
     text-align: center;
     background: #ffffff;
