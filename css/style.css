@@ -19,7 +19,7 @@ div.Welcome {
 
 div.Section{
 	background-color: #ffffff;
-	width: 100%;
+	width: 50%;
 	padding-left: 25%;
 	padding-right: 25%; 
 }
@@ -50,8 +50,6 @@ p {
 p.Welcome {
 	font-family: Futura;
 	font-size: 10em;
-	font-weight: 50;
-	line-height: 15em;
 	color: #f7484e;
 	text-align: center;
 }
@@ -63,6 +61,7 @@ p.Intro {
 	line-height: 1.5em;
 	color: #404040;
 	text-align: center;
+	margin-bottom: 2em;
 }
 
 
