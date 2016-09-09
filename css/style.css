@@ -30,16 +30,16 @@ div.SectionBreak{
 
 h1{
 	font-family: Futura;
-	font-size: 3 em;
+	font-size: 3em;
 	font-weight: 50;
-	line-height: 2.25em;
+	line-height: 4.5em;
 	color: #404040;
 	text-align: center;
 }
 
 p {
 	font-family: Futura;
-	font-size: 1 em;
+	font-size: 1em;
 	font-weight: 50;
 	line-height: 1.5em;
 	color: #404040;
@@ -47,15 +47,16 @@ p {
 
 p.Welcome {
 	font-family: Futura;
-	font-size: 10 em;
+	font-size: 10em;
 	font-weight: 50;
 	line-height: 15em;
-	color: ##f7484e;
+	color: #f7484e;
+	text-align: center;
 }
 
 p.Intro {
 	font-family: Futura;
-	font-size: 1 em;
+	font-size: 1em;
 	font-weight: 50;
 	line-height: 1.5em;
 	color: #404040;
