@@ -2,7 +2,6 @@ div.Header {
 	background-color: #ffffff;
 	width: 100%;
 	height: 3em;
-	padding: 1em;
 	opacity: 1;
 	position: fixed;
 	z-index: 999;
