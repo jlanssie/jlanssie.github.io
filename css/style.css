@@ -20,6 +20,8 @@ div.Welcome {
 div.Section{
 	background-color: #ffffff;
 	width: 100%;
+	padding-left: 25%;
+	padding-right: 25%; 
 }
 
 div.SectionBreak{
