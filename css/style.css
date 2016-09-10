@@ -71,6 +71,7 @@ p {
 
 p.HeaderStamp {
 	padding-left: 3em;
+	float:left; 
 }
 
 p.Header {
@@ -80,6 +81,8 @@ p.Header {
 	line-height: 1.5em;
 	text-align: center;
 	text-transform: uppercase;
+	padding-right: 3em;
+
 }
 
 p.NewPink {
