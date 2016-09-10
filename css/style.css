@@ -55,6 +55,7 @@ p.Header {
 	font-weight: 50;
 	line-height: 1.5em;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 p.Welcome {
@@ -84,6 +85,12 @@ img#Logo {
 	height:50vh; 
 	margin-top:25vh; 
 	margin-bottom:25vh;
+
+}
+
+a.Header {
+	text-decoration: none;
+	color: #f70d8a;
 
 }
 
