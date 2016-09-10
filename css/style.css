@@ -69,6 +69,10 @@ p {
 	color: #000000;
 }
 
+p.HeaderStamp {
+	padding-left: 3em;
+}
+
 p.Header {
 	font-family: Futura;
 	color: #f70d8a;
@@ -115,6 +119,11 @@ img#Logo {
 	height:50vh; 
 	margin-top:25vh; 
 	margin-bottom:25vh;
+}
+
+img.HeaderStamp {
+	width: 2em;
+	height: 2em;
 }
 
 a {
