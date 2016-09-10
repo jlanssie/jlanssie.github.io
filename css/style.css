@@ -34,7 +34,6 @@ div.SectionBreak{
 div.Black {
 	float:left;
 	width:50vw;
-	height: 100vw;
 	background-color: #000000;
 
 }
@@ -42,7 +41,6 @@ div.Black {
 div.NewPink {
 	float:left;
 	width: 50vw;
-	height: 100vw;
 	background-color: #f70d8a;
 }
 
@@ -90,7 +88,7 @@ p.Intro {
 	margin-bottom: 2em;
 }
 
-p.Intro {
+p.IntroBox {
 	font-family: Futura;
 	font-size: 1em;
 	font-weight: 50;
