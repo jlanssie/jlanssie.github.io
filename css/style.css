@@ -47,11 +47,19 @@ div.NewPink {
 	background-color: #f70d8a;
 }
 
-h1{
+h1 {
 	font-family: Futura;
 	font-size: 3em;
 	line-height: 4.5em;
 	text-align: center;
+}
+
+h1.Black {
+	color: #ffffff;
+}
+
+h1.White {
+	color: #000000;
 }
 
 p {
