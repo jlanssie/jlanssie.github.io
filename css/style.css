@@ -31,6 +31,21 @@ div.SectionBreak{
 	height: 10vh;
 }
 
+div.Black {
+	float:left;
+	width:50vw;
+	height: 100vw;
+	background-color: #000000;
+
+}
+
+div.NewPink {
+	float:left;
+	width: 50vw;
+	height: 100vw;
+	background-color: #f70d8a;
+}
+
 h1{
 	font-family: Futura;
 	font-size: 3em;
@@ -85,7 +100,6 @@ img#Logo {
 	height:50vh; 
 	margin-top:25vh; 
 	margin-bottom:25vh;
-
 }
 
 a {
@@ -97,7 +111,6 @@ a {
 a.Header {
 	text-decoration: none;
 	color: #f70d8a;
-
 }
 
 @media only screen and (max-device-width: 480px) {
