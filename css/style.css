@@ -90,6 +90,17 @@ p.Intro {
 	margin-bottom: 2em;
 }
 
+p.Intro {
+	font-family: Futura;
+	font-size: 1em;
+	font-weight: 50;
+	line-height: 1.5em;
+	color: #404040;
+	text-align: center;
+ 	padding: 3em;
+}
+
+
 body{
 	margin: 0;
 	width: 100%;	
