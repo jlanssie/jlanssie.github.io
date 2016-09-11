@@ -80,6 +80,7 @@ p.Header {
 	font-size: 1em;
 	line-height: 1.5em;
 	text-align: left;
+	vertical-align: middle;
 	text-transform: uppercase;
 }
 
