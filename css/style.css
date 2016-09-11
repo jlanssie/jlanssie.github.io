@@ -71,13 +71,10 @@ p {
 	color: #000000;
 }
 
-p.HeaderStamp {
-	padding-left: 3em;
+p.Header {
+	padding-left: 2em;
 	padding-right: 2em;
 	float:left; 
-}
-
-p.Header {
 	font-family: Futura;
 	color: #000000;
 	font-size: 1em;
@@ -135,7 +132,7 @@ img#Welcome {
 	margin-bottom:40vh;
 }
 
-img.HeaderStamp {
+img.Header {
 	width: 2em;
 	height: 2em;
 }
