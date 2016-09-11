@@ -168,7 +168,7 @@ a.White {
 
 a.Menu {
 	text-decoration: none;
-	color: #f70d8a;
+	color: #000000;
 }
 
 @media only screen and (max-device-width: 480px) {
