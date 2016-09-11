@@ -110,11 +110,11 @@ body{
 	width: 100%;	
 }
 
-img#Logo {
+img#Welcome {
 
-	height:50vh; 
-	margin-top:25vh; 
-	margin-bottom:25vh;
+	height:20vh; 
+	margin-top:40vh; 
+	margin-bottom:40vh;
 }
 
 img.HeaderStamp {
