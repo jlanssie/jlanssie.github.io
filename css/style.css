@@ -73,7 +73,6 @@ p {
 
 p.Header {
 	padding-left: 2em;
-	padding-right: 2em;
 	float:left; 
 	font-family: Futura;
 	color: #000000;
@@ -126,7 +125,7 @@ body{
 	width: 100%;	
 }
 
-img#Welcome {
+img.Welcome {
 
 	height:20vh; 
 	margin-top:40vh; 
