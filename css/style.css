@@ -12,11 +12,10 @@ div.Menu {
 	background-color: #ffffff;
 	opacity: 0.9;
 	width: 100%;
-	height: 5vh;
+	height: 3.5em;
 	border: 2em;
-	z-index: 998;
-	position: absolute;
-	bottom: 0em;
+	position: fixed;
+	z-index: 999;
 }
 
 
@@ -27,6 +26,10 @@ div.Welcome {
     text-align: center;
     background: #ffffff;
     z-index: 996;
+    background-image: url(https://jlanssie.github.io/assets/Welcome.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 div.Wrapper {
@@ -132,9 +135,6 @@ body{
 }
 
 img.Welcome {
-	height:20vh; 
-	margin-top:40vh; 
-	margin-bottom:40vh;
 	z-index: 997;
 }
 
