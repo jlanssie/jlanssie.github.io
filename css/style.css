@@ -74,6 +74,7 @@ p {
 p.HeaderImage {
 	padding: 1em;
 	float:left; 
+	margin: 0;
 }
 
 p.Header {
@@ -84,6 +85,7 @@ p.Header {
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
+	padding-right:4em;
 }
 
 p.Menu {
