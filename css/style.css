@@ -33,24 +33,18 @@ div.Welcome {
     background-repeat: no-repeat;
 }
 
-div.Wrapper {
-	width: 100vw;
-	height: 50vh;
-	clear: left;
-}
-
 div.Black {
 	float:left;
-	width:50vw;
-	height: 100%;
+	width:100vw;
+	height: 50vh;
 	background-color: #000000;
 
 }
 
 div.White {
 	float:left;
-	width:50vw;
-	height: 100%;
+	width:100vw;
+	height: 50vh;
 	background-color: #ffffff;
 
 }
