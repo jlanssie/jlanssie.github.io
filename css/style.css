@@ -71,14 +71,18 @@ p {
 	color: #000000;
 }
 
+p.HeaderImage {
+	padding: 1em;
+	float:left; 
+}
+
 p.Header {
-	padding-left: 2em;
 	float:left; 
 	font-family: Futura;
 	color: #000000;
 	font-size: 1em;
 	line-height: 1.5em;
-	text-align: left;
+	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
 }
@@ -90,7 +94,6 @@ p.Menu {
 	line-height: 1.5em;
 	text-align: center;
 	text-transform: uppercase;
-	padding-right: 3em;
 }
 
 p.NewPink {
