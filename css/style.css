@@ -124,6 +124,15 @@ img.HeaderStamp {
 
 a {
 	text-decoration: none;
+}
+
+a.Black {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a.White {
+	text-decoration: none;
 	color: #000000;
 }
 
