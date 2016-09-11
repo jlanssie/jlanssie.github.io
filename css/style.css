@@ -16,17 +16,18 @@ div.Menu {
 	border: 2em;
 	z-index: 999;
 	height: 3.5em;
-	z-index: 1; 
+	position: relative;
+	bottom: -3.5em;
 }
 
 
 div.Welcome {
-    position: relative;
     overflow: hidden;
     height: 100vh;
     width: 100vw;
     text-align: center;
     background: #ffffff;
+    z-index: 899;
 }
 
 div.Wrapper {
