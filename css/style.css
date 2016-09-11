@@ -27,7 +27,7 @@ div.Welcome {
     width: 100vw;
     text-align: center;
     background: #ffffff;
-    z-index: 997;
+    z-index: 996;
 }
 
 div.Wrapper {
@@ -136,6 +136,7 @@ img.Welcome {
 	height:20vh; 
 	margin-top:40vh; 
 	margin-bottom:40vh;
+	z-index: 997;
 }
 
 img.Header {
