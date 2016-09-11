@@ -16,6 +16,7 @@ div.Menu {
 	border: 2em;
 	z-index: 999;
 	height: 3.5em;
+	z-index: 1; 
 }
 
 
