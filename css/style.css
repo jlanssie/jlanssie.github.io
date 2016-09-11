@@ -5,6 +5,7 @@ div.Header {
 	height: 3.5em;
 	border: 2em;
 	position: fixed;
+	z-index: 999;
 }
 
 div.Menu {
@@ -12,7 +13,6 @@ div.Menu {
 	opacity: 0.9;
 	width: 100%;
 	height: 3.5em;
-	position: fixed;
 	border: 2em;
 	z-index: 999;
 	height: 3.5em;
