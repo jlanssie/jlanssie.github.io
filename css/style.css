@@ -3,21 +3,9 @@ div.Header {
 	opacity: 0.9;
 	width: 100%;
 	height: 3.5em;
-	border: 2em;
 	position: fixed;
 	z-index: 999;
 }
-
-div.Menu {
-	opacity: 0.9;
-	width: 100%;
-	height: 3.5em;
-	border: 2em;
-	position: absolute;
-	bottom: 40vh;
-	z-index: 999;
-}
-
 
 div.Welcome {
     overflow: hidden;
@@ -29,6 +17,23 @@ div.Welcome {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+div.Logo {
+	width: 100vh;
+	height: 25vh;
+	position: absolute;
+	bottom: 46vh;
+	z-index: 999;
+}
+
+div.Menu {
+	opacity: 0.9;
+	width: 100%;
+	height: 6vh;
+	position: absolute;
+	bottom: 40vh;
+	z-index: 999;
 }
 
 div.Black {
@@ -132,6 +137,11 @@ img.Welcome {
 img.Header {
 	width: 2em;
 	height: 2em;
+}
+
+img.Logo {
+	width: 25vh;
+	height: 25vh;
 }
 
 a {
