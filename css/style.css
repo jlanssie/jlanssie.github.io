@@ -140,6 +140,8 @@ a:visited {
 a.Section {
 	text-decoration: none;
 	color: #000000;
+	font-style: bold;
+	font
 }
 
 a.Menu {
