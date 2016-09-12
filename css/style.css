@@ -19,18 +19,10 @@ div.Welcome {
     background-repeat: no-repeat;
 }
 
-div.Logo {
-	width: 100vh;
-	height: 40vh;
-	position: absolute;
-	bottom: 45vh;
-	z-index: 998;
-}
-
 div.Menu {
 	opacity: 0.9;
 	width: 100%;
-	height: 3.5em;
+	height: 50vh;
 	position: absolute;
 	bottom: 30vh;
 	z-index: 998;
@@ -89,6 +81,14 @@ p.Header {
 	padding-right:4em;
 }
 
+p.Logo {
+	font-family: Futura;
+	color: #f70d8a;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
 p.Menu {
 	font-family: Futura;
 	color: #f70d8a;
@@ -140,8 +140,8 @@ img.Header {
 }
 
 img.Logo {
-	width: 25vh;
-	height: 25vh;
+	width: 30vh;
+	height: 30vh;
 }
 
 a {
