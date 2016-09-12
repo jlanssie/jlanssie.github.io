@@ -20,7 +20,7 @@ div.Welcome {
 }
 
 div.Menu {
-	opacity: 0.9;
+	opacity: 1;
 	width: 100%;
 	height: 50vh;
 	position: absolute;
@@ -28,14 +28,7 @@ div.Menu {
 	z-index: 998;
 }
 
-div.Black {
-	float:left;
-	width:100vw;
-	height: 50vh;
-	background-color: #000000;
-}
-
-div.White {
+div.Section {
 	float:left;
 	width:100vw;
 	height: 50vh;
@@ -45,22 +38,18 @@ div.White {
 h1 {
 	font-family: Futura;
 	font-size: 3em;
-	line-height: 4.5em;
+	line-height: 2em;
 	text-align: center;
 }
 
-h1.Black {
-	color: #ffffff;
-}
-
-h1.White {
+h1.Section {
 	color: #000000;
 }
 
 p {
 	font-family: Futura;
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 2em;
 	color: #000000;
 }
 
@@ -82,10 +71,6 @@ p.Header {
 }
 
 p.Logo {
-	font-family: Futura;
-	color: #f70d8a;
-	font-size: 1em;
-	line-height: 1.5em;
 	text-align: center;
 }
 
@@ -98,25 +83,7 @@ p.Menu {
 	text-transform: uppercase;
 }
 
-p.NewPink {
-	font-family: Futura;
-	font-size: 1em;
-	line-height: 1.5em;
-	color: #000000;
-	text-align: center;
- 	padding: 3em;
-}
-
-p.Black {
-	font-family: Futura;
-	font-size: 1em;
-	line-height: 1.5em;
-	color: #ffffff;
-	text-align: center;
- 	padding: 3em;
-}
-
-p.White {
+p.Section {
 	font-family: Futura;
 	font-size: 1em;
 	line-height: 1.5em;
@@ -142,6 +109,7 @@ img.Header {
 img.Logo {
 	width: 30vh;
 	height: 30vh;
+	opacity: 0.9;
 }
 
 a {
@@ -157,12 +125,7 @@ a:visited {
 	text-decoration: none;
 }
 
-a.Black {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-a.White {
+a.Section {
 	text-decoration: none;
 	color: #000000;
 }
