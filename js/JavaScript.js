@@ -1,3 +1,3 @@
-$(document).on('scroll', function (e) {
+$(document).on('scroll', function () {
     $('.Header').css('opacity', ($(document).scrollTop() / 500));
 });

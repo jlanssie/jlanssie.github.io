@@ -150,16 +150,32 @@ a.Menu {
 
 @media only screen and (max-device-width: 480px) {
 
-	div.Welcome {
+div.Welcome {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 996;
     background-image: url(https://jlanssie.github.io/assets/WelcomeBW-Phone.jpg);
-	}
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 }
 
 @media only screen and (min-device-width:480px; max-device-width: 1024px) {
 
 	div.Welcome {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 996;
     background-image: url(https://jlanssie.github.io/assets/WelcomeBW-Tablet.jpg);
-	}
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 }
