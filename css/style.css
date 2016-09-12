@@ -9,13 +9,12 @@ div.Header {
 }
 
 div.Menu {
-	background-color: #ffffff;
 	opacity: 0.9;
 	width: 100%;
 	height: 3.5em;
 	border: 2em;
 	position: absolute;
-	bottom: 0em;
+	bottom: 40vh;
 	z-index: 999;
 }
 
@@ -25,9 +24,8 @@ div.Welcome {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    background: #ffffff;
     z-index: 996;
-    background-image: url(https://jlanssie.github.io/assets/Welcome.jpg);
+    background-image: url(https://jlanssie.github.io/assets/WelcomeBW.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
