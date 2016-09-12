@@ -39,10 +39,16 @@ h1 {
 	font-size: 3em;
 	line-height: 2em;
 	text-align: center;
+	color: #000000;
 }
 
-h1.Section {
-	color: #000000;
+h2 {
+    font-family: Futura;
+    color: #f70d8a;
+    font-size: 2em;
+    font-style: italic;
+    line-height: 1em;
+    text-align: center;
 }
 
 p {
