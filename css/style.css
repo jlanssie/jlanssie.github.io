@@ -25,7 +25,7 @@ div.Welcome {
     width: 100vw;
     text-align: center;
     z-index: 996;
-    background-image: url(https://jlanssie.github.io/assets/WelcomeBW.jpg);
+    background-image: url(https://jlanssie.github.io/assets/WelcomeBW-Desktop.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -164,4 +164,16 @@ a.Menu {
 
 @media only screen and (max-device-width: 480px) {
 
+	div.Welcome {
+    background-image: url(https://jlanssie.github.io/assets/WelcomeBW-Phone.jpg);
 	}
+
+}
+
+@media only screen and (min-device-width:480px; max-device-width: 1024px) {
+
+	div.Welcome {
+    background-image: url(https://jlanssie.github.io/assets/WelcomeBW-Tablet.jpg);
+	}
+
+}
