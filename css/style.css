@@ -40,6 +40,8 @@ h1 {
 	line-height: 2em;
 	text-align: center;
 	color: #000000;
+	padding-left: 5vw ;
+	padding-right: 5vw ;
 }
 
 h2 {
@@ -49,6 +51,8 @@ h2 {
     font-style: italic;
     line-height: 1em;
     text-align: center;
+    padding-left: 5vw ;
+	padding-right: 5vw ;
 }
 
 p {
@@ -86,6 +90,8 @@ p.Menu {
 	line-height: 1.5em;
 	text-align: center;
 	text-transform: uppercase;
+	padding-left: 5vw ;
+	padding-right: 5vw ;
 }
 
 p.Section {
@@ -139,6 +145,7 @@ a.Section {
 a.Menu {
 	text-decoration: none;
 	color: #ffffff;
+	white-space: nowrap;
 }
 
 @media only screen and (max-device-width: 480px) {
