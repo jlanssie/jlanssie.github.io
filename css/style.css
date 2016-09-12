@@ -1,3 +1,17 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(https://jlanssie.github.io/assets/WelcomeBW.jpg) no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 div.Header {
 	background-color: #ffffff;
 	opacity: 0.9;
@@ -24,12 +38,6 @@ div.Welcome {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    z-index: 996;
-    background-image: url(https://jlanssie.github.io/assets/WelcomeBW.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 100%;
 }
 
 div.Black {
@@ -37,7 +45,6 @@ div.Black {
 	width:100vw;
 	height: 50vh;
 	background-color: #000000;
-
 }
 
 div.White {
@@ -45,8 +52,6 @@ div.White {
 	width:100vw;
 	height: 50vh;
 	background-color: #ffffff;
-	min-height: 100%;
-
 }
 
 h1 {
@@ -122,12 +127,6 @@ p.White {
 	color: #000000;
 	text-align: center;
  	padding: 3em;
-}
-
-body{
-	margin: 0;
-	width: 100%;	
-	height: 100%;
 }
 
 img.Welcome {
