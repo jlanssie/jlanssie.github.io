@@ -202,10 +202,10 @@ p {
 /* Links
 ********************************************************************* */
 a {
-	color: #1EAEDB;
+	color: #222222;
 }
 a:hover {
-	color: #0FA0CE;
+	color: #f70d8a;
 }
 /* Header Section
 ********************************************************************* */
@@ -359,7 +359,7 @@ nav ul a {
 	text-decoration: none;
 }
 nav ul a:hover {
-	color: #CFCFCF;
+	color: #f70d8a;
 }
 .mobile-toggle {
 	display: none;
@@ -595,14 +595,14 @@ input[type="submit"] {
 	text-transform: uppercase;
 	text-decoration: none;
 	white-space: nowrap;
-	background: #5fc3e4;
+	background: #000000;
 	border-radius: 0px;
 	border: 0;
 	cursor: pointer;
 	box-sizing: border-box;
 }
 input[type="submit"]:hover {
-	background: #e55d87;
+	background: #f70d8a;
 	text-decoration: none;
 }
 /* Footer Section
