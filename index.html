@@ -159,54 +159,19 @@
       <div class="row">
         <div class="six columns">
           <label for="exampleRecipientInput">Name</label>
-          <input class="u-full-width" type="text" name="cf_name">
+          <input class="u-full-width" type="text">
         </div>
         <div class="six columns">
           <label for="exampleEmailInput">Email</label>
-          <input class="u-full-width" type="email" name="cf_email">
+          <input class="u-full-width" type="email">
         </div>
       </div>
       <div class="row">
-        <label for="exampleMessage" name="cf_message">Message</label>
+        <label for="exampleMessage">Message</label>
         <textarea class="u-full-width"></textarea>
         <input class="button-primary" type="submit" value="Submit">
       </div>
     </form>
-
-    <?php
-  $field_name = $_POST['cf_name'];
-  $field_email = $_POST['cf_email'];
-  $field_message = $_POST['cf_message'];
-
-  $mail_to = 'jlanssie@gmail.com';
-  $subject = 'Message from a site visitor '.$field_name;
-
-  $body_message = 'From: '.$field_name."\n";
-  $body_message .= 'E-mail: '.$field_email."\n";
-  $body_message .= 'Message: '.$field_message;
-
-  $headers = 'From: '.$field_email."\r\n";
-  $headers .= 'Reply-To: '.$field_email."\r\n";
-
-  $mail_status = mail($mail_to, $subject, $body_message, $headers);
-
-  if ($mail_status) { ?>
-    <script language="javascript" type="text/javascript">
-      alert('Message sent.');
-      window.location = 'contact_page.html';
-    </script>
-  
-  <?php
-  }
-  else { ?>
-    <script language="javascript" type="text/javascript">
-      alert('Message failed. Please, send an email to jlanssie@gmail.com');
-      window.location = 'contact_page.html';
-    </script>
-  <?php
-  }
-
-?>
 
   </div>
 </section>
