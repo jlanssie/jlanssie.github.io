@@ -53,7 +53,7 @@
     <div class="row">
       <h1>WEB</h1>
       <div class="block"></div>
-      <p>Doctype. Html. Head. Body. H1. P. I speak HTML5, CSS3, JavaScript, jQuery and PHP. If (you query "how good?"){I return, "good enough to set up this little website and to edit others"}; /*Comment: I worked as a digital editor for <a href="https://www.tijd.be" target="_blank">Tijd.be</a> and a webmaster for <a href="https://www.lamonnaie.be" target="_blank">Lamonnaie.be</a>*/</p>
+      <p>Doctype HTML. Head. Body. H1. P. I speak HTML5, CSS3, JavaScript, jQuery and PHP. If (you query "how good?"){I return, "good enough to set up this little website and to edit others"}; /*Comment: I worked as a digital editor for <a href="https://www.tijd.be" target="_blank">Tijd.be</a> and a webmaster for <a href="https://www.lamonnaie.be" target="_blank">Lamonnaie.be</a>*/</p>
     </div>
     
       <div class="row">
@@ -154,24 +154,60 @@
   <div class="container">
     <h1>Contact</h1>
     <div class="block"></div>
-    <form action="mailto:jlanssie@gmail.com" method="post" enctype="text/plain">
+   
+    <form action="contact.php" method="post" enctype="text/plain">
       <div class="row">
         <div class="six columns">
           <label for="exampleRecipientInput">Name</label>
-          <input class="u-full-width" type="text">
+          <input class="u-full-width" type="text" name="cf_name">
         </div>
         <div class="six columns">
           <label for="exampleEmailInput">Email</label>
-          <input class="u-full-width" type="email">
+          <input class="u-full-width" type="email" name="cf_email">
         </div>
       </div>
       <div class="row">
-        <label for="exampleMessage">Message</label>
+        <label for="exampleMessage" name="cf_message">Message</label>
         <textarea class="u-full-width"></textarea>
         <input class="button-primary" type="submit" value="Submit">
-        <input class="button-primary" type="reset" value="Reset">
       </div>
     </form>
+
+    <?php
+  $field_name = $_POST['cf_name'];
+  $field_email = $_POST['cf_email'];
+  $field_message = $_POST['cf_message'];
+
+  $mail_to = 'jlanssie@gmail.com';
+  $subject = 'Message from a site visitor '.$field_name;
+
+  $body_message = 'From: '.$field_name."\n";
+  $body_message .= 'E-mail: '.$field_email."\n";
+  $body_message .= 'Message: '.$field_message;
+
+  $headers = 'From: '.$field_email."\r\n";
+  $headers .= 'Reply-To: '.$field_email."\r\n";
+
+  $mail_status = mail($mail_to, $subject, $body_message, $headers);
+
+  if ($mail_status) { ?>
+    <script language="javascript" type="text/javascript">
+      alert('Message sent.');
+      window.location = 'contact_page.html';
+    </script>
+  
+  <?php
+  }
+  else { ?>
+    <script language="javascript" type="text/javascript">
+      alert('Message failed. Please, send an email to jlanssie@gmail.com');
+      window.location = 'contact_page.html';
+    </script>
+  <?php
+  }
+
+?>
+
   </div>
 </section>
 
