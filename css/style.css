@@ -709,3 +709,9 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	background: linear-gradient(135deg, #f70d8a 0%, #000000 100%);
 	margin-bottom: 50px;
 }
+
+.blockTwo {
+	width: 70px;
+	height: 2px;
+	margin-bottom: 50px;
+}
