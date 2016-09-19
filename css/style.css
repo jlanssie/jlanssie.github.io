@@ -462,14 +462,13 @@ opacity: 0;
 
 #print {
 	padding: 100px 0 50px 0;
+	background-color: #F5F5F5;
 }
 
 #graphic {
 	padding: 100px 0 50px 0;
 }
-#print {
-	background-color: #F5F5F5;
-}
+
 
 /* Team Section
 ********************************************************************* */
@@ -583,6 +582,7 @@ opacity: 0;
 ********************************************************************* */
 #contact {
 	padding: 100px 0 100px 0;
+	background-color: #F5F5F5;
 }
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
 	height: 38px;
