@@ -467,6 +467,9 @@ opacity: 0;
 #graphic {
 	padding: 100px 0 50px 0;
 }
+#print {
+	background-color: #F5F5F5;
+}
 
 /* Team Section
 ********************************************************************* */
