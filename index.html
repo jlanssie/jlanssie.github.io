@@ -156,7 +156,27 @@
   <div class="container">
     <h1>Contact</h1>
     <div class="block"></div>
-    <form method="post" action="http://formspree.io/you@email.com">
+
+<?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'jlanssie?github.io'; 
+    $to = 'jlanssie@gmail.com'; 
+    $subject = 'Hello';
+
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+    if ($_POST['submit']) {
+    if (mail ($to, $subject, $body, $from)) { 
+        echo '<p>Message sent.</p>';
+    } else { 
+        echo '<p>Message failed.</p>'; 
+    }
+}
+?>
+
+    <form method="post" action="index.php">
       <div class="row">
         <div class="six columns">
           <label for="exampleRecipientInput">Name</label>
