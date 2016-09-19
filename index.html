@@ -156,43 +156,19 @@
   <div class="container">
     <h1>Contact</h1>
     <div class="block"></div>
-    
-<script>
-<?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'jlanssie.github.io'; 
-    $to = 'jlanssie@gmail.com'; 
-    $subject = 'Mail from jlanssie.github.io';
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-    if ($_POST['submit']) {
-    if (mail ($to, $subject, $body, $from)) { 
-    } else { 
-    }
-}
-?>
-</script>
-
-    <form method="post" action="index.php">
+  <form action="http://formspree.io/you@email.com">
       <div class="row">
-        <div class="six columns">
-          <label for="exampleRecipientInput">Name</label>
-          <input name="name" class="u-full-width" type="text">
-        </div>
-        <div class="six columns">
-          <label for="exampleEmailInput">Email</label>
-          <input name="email" class="u-full-width" type="email">
-        </div>
+          <label for="exampleRecipientInput">E-mail</label>
+          <input class="u-full-width" type="email" name="_replyto">
       </div>
       <div class="row">
         <label for="exampleMessage">Message</label>
-        <textarea name="message" class="u-full-width"></textarea>
-        <input id="submit" name="submit" class="button-primary" type="submit" value="Submit">
+        <textarea name="body" class="u-full-width"></textarea>
+        <input class="button-primary" type="submit" value="Send">
       </div>
-    </form>
+  </form>
+
   </div>
 </section>
 
