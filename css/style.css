@@ -139,6 +139,9 @@ body {
 .offset-by-one-half.column,  .offset-by-one-half.columns {
 	margin-left: 52%;
 }
+#drop {
+	display:inline;
+}
 }
 /* Typography
 ********************************************************************* */
