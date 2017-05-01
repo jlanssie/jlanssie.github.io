@@ -1,1 +1,1 @@
-A template created by Jeff, edited by Jeremy Lanssiers, hosted by Github Pages. 
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/gh-pages/LICENSE) license.
