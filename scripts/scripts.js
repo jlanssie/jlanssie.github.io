@@ -15,3 +15,60 @@ $(document).ready(function () {
         var a = (new Date().getFullYear()>2010) ? new Date().getFullYear() : "2010"
         $("div.copyright").html("&copy; "+ a + " Jeremy Lanssiers");
 });
+
+/* Change title tracks */
+
+//List of quotes
+var track1Quotes = ["Quote 1.a", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+var track2Quotes = ["Quote 1.b", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+var track3Quotes = ["Quote 1.c", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+var track4Quotes = ["Quote 1.d", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+
+//Counter for loop
+var m1 = 0;
+var m2 = 0;
+var m3 = 0;
+var m4 = 0;
+
+//Call the changeText() function every XXXX miliseconds.
+setInterval(changeTrack1, 4000);
+
+//Function to change div to a quote and change counter.
+function changeTrack1(){
+    document.getElementById("track1").innerHTML=(track1Quotes[m1]);
+    if(m1 == 4)
+        m1 = 0;
+    else
+        m1++;
+}
+
+setInterval(changeTrack2, 2000);
+
+function changeTrack2(){
+    document.getElementById("track2").innerHTML=(track2Quotes[m2]);
+    if(m2 == 4)
+        m2 = 0;
+    else
+        m2++;
+}
+
+setInterval(changeTrack3, 5000);
+
+function changeTrack3(){
+    document.getElementById("track3").innerHTML=(track3Quotes[m3]);
+    if(m3 == 4)
+        m3 = 0;
+    else
+        m3++;
+}
+
+setInterval(changeTrack4, 3000);
+
+function changeTrack4(){
+    document.getElementById("track4").innerHTML=(track4Quotes[m4]);
+    if(m4 == 4)
+        m4 = 0;
+    else
+        m4++;
+}
+
