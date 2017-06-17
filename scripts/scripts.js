@@ -42,7 +42,7 @@ function changeTrack1(){
         m1++;
 }
 
-setInterval(changeTrack2, 3000);
+setInterval(changeTrack2, 2000);
 
 function changeTrack2(){
     document.getElementById("track2").innerHTML=(track2Quotes[m2]);
