@@ -19,10 +19,10 @@ $(document).ready(function () {
 /* Change title tracks */
 
 //List of quotes
-var track1Quotes = ["Quote 1.a", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
-var track2Quotes = ["Quote 1.b", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
-var track3Quotes = ["Quote 1.c", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
-var track4Quotes = ["Quote 1.d", "Quote 2", "Quote 3", "Quote 4", "Quote 5"];
+var track1Quotes = ["gaga","red-hot","wacky","rabid","keen"];
+var track2Quotes = ["web geek","editor-in-dictator","homo journalisticus","wannabe paperback writer","designer"];
+var track3Quotes = ["with fruity","with cool","with hip","with fresh","with askew"];
+var track4Quotes = ["ideas","opinions","theories","views","suspicions"];
 
 //Counter for loop
 var m1 = 0;
