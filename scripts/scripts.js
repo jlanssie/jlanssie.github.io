@@ -31,7 +31,7 @@ var m3 = 0;
 var m4 = 0;
 
 //Call the changeText() function every XXXX miliseconds.
-setInterval(changeTrack1, 5000);
+setInterval(changeTrack1, 6000);
 
 //Function to change div to a quote and change counter.
 function changeTrack1(){
@@ -42,7 +42,7 @@ function changeTrack1(){
         m1++;
 }
 
-setInterval(changeTrack2, 3000);
+setInterval(changeTrack2, 4000);
 
 function changeTrack2(){
     document.getElementById("track2").innerHTML=(track2Quotes[m2]);
@@ -52,7 +52,7 @@ function changeTrack2(){
         m2++;
 }
 
-setInterval(changeTrack3, 5000);
+setInterval(changeTrack3, 7000);
 
 function changeTrack3(){
     document.getElementById("track3").innerHTML=(track3Quotes[m3]);
@@ -62,7 +62,7 @@ function changeTrack3(){
         m3++;
 }
 
-setInterval(changeTrack4, 3000);
+setInterval(changeTrack4, 5000);
 
 function changeTrack4(){
     document.getElementById("track4").innerHTML=(track4Quotes[m4]);
