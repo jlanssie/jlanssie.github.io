@@ -72,5 +72,6 @@ function changeTrack4(){
         m4++;
 }
 
+/*Image slider*/
 
 
