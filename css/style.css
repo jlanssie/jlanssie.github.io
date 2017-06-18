@@ -215,6 +215,7 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	border-left:1em; 
 	border-right: 1em;
 	display: inline-flex;
+	font-size: 1.33333em;
 
 }
 
@@ -296,8 +297,7 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	}
 
 	.imageSlider {
-		height:300px;
-		overflow:hidden;
+		margin:0.75em;
 	}
 
 }
