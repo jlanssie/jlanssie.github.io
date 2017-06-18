@@ -203,6 +203,21 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	font-weight: bold;
 }
 
+.imageSlider {
+	margin:2em;
+	padding:0.5em;
+	background-color:#ffffff;
+	height:300px;
+	overflow:hidden;
+}
+
+.imageSlider img {
+	border-left:1em; 
+	border-right: 1em;
+	display: inline-flex;
+
+}
+
 @media screen and (max-width: 600px){
 
 	#navbar ul {
@@ -278,6 +293,11 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	p {
 		margin: 0.75em;
 		margin-top:1em;
+	}
+
+	.imageSlider {
+		height:300px;
+		overflow:hidden;
 	}
 
 }
