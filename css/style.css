@@ -6,92 +6,28 @@ body {
 	font-size:1em;
 }
 
-#home {
-	visibility: none;
-}
-
-#navbar {
-	position: sticky;
-	top:0;
-	width: 100%;
-	min-height: 4em;
-	background: #000000;
-	font-family: Verdana, Arial;
-	border-bottom: 1px solid #e9e9e9;
-}
-
-#navbar div {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #000000;
-	float: left;
-}
-
-#navbar div a {
-	font-size: 1em;
-	font-family: Verdana, Arial;
-	color:#ffffff;
-	line-height: 1em;
-	text-align: center;
-	font-weight: 800;
-	display: block;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    text-decoration: none;
-}
-
-#navbar div a:hover {
-	background-color: #ffffff;
-	color: #000000;
-}
-
-#navbar ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #000000;
-    float:right;
-}
-
-#navbar ul li {
-	float: left;
-}
-
-#navbar ul li a {
-	font-size: 1em;
-	font-family: Verdana, Arial;
-	color:#ffffff;
-	line-height: 1em;
-	text-align: center;
-	font-weight: 800;
-	display: block;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover {
-	background-color: #ffffff;
-	color: #000000;
-}
-
-#navbar .clicker {
-    display: none;
-    float:right;
-}
-
 .hero {
-	height: calc(100vh - 4em);
+	height: 100vh;
 	min-height: 400px;
 	background-color: #f70d8a;
 	overflow:visible;
+}
+
+.titleZeroMobile {
+		display:none;
+		visibility: none;
+	}
+
+.titleZeroDesktop {
+	float:right;
+	margin-right: 1em;
+	margin-top: 10vh;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: Courier, Times;
+	font-size: 2em;
+	padding: 0.5em;
+	display:inline-flex;
 }
 
 .titleOne {
@@ -221,46 +157,6 @@ a svg:hover #facebook, a svg:hover #linkedin {
 
 @media screen and (max-width: 600px){
 
-	#navbar ul {
-		clear: left;
-		float: none;
-	}
-
-	#navbar ul li {
-		float: none;
-		border-top: 1px solid #ffffff;
-	}
-
-
-	.notClicked .anchor {
-		display: none;
-	}
-
-	#navbar .clicker {
-    	float: right;
-    	display: block;
-	}
-
-	#navbar .clicker a {
-    	text-decoration: none;
-    	color: #ffffff;
-    	font-weight: 800;
-    	padding: 0.3em;
-    	font-size:1em;
-    	border: solid white 0.2em;
-    	margin: 1em;
-    	width: 1em;
-    	font-size: 1em;
-		line-height: 1em;
-		text-align: center;
-		display: block;
- 	    float:right;
-	}
-
-	.clicked .anchor{
-		display: block;
-	}
-
 	.hero {
 		min-height: 400px;
 	}
@@ -271,10 +167,27 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	padding-bottom:1em;
 	}
 
+	.titleZeroDesktop {
+		display:none;
+		visibility: none;
+	}
+
+	.titleZeroMobile {
+		float:right;
+		margin-right: 0.5em;
+		margin-top: 10vh;
+		background-color: #ffffff;
+		color: #000000;
+		font-family: Courier, Times;
+		font-size: 2em;
+		padding: 0.5em;
+		display:inline-flex;
+	}
+
 	.titleOne {
 		margin-right: 0.5em;
 		margin-left: 0.5em;
-		margin-top: 10vh;
+		margin-top: 1em;
 	}
 
 	.titleOnePlus {
