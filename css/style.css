@@ -214,7 +214,7 @@ a svg:hover #facebook, a svg:hover #linkedin {
 .imageSlider img {
 	border-left:1em; 
 	border-right: 1em;
-	display: inline-flex;
+	display: inline;
 	font-size: 1.33333em;
 
 }
