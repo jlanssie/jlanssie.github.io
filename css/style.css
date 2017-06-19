@@ -4,12 +4,16 @@ body {
 	border:0;
 	margin:0;
 	font-size:1em;
+	font-family: Courier, Times;
 }
 
 .hero {
-	height: 100vh;
+	height: calc(100vh - 15vh);
 	min-height: 400px;
 	background-color: #f70d8a;
+	padding-top:15vh;
+	padding-left:20vw;
+	padding-right:20vw;
 	overflow:visible;
 }
 
@@ -20,20 +24,16 @@ body {
 
 .titleZeroDesktop {
 	float:right;
-	margin-right: 1em;
-	margin-top: 10vh;
+	margin-right:0.5em;
 	background-color: #ffffff;
 	color: #000000;
-	font-family: Courier, Times;
 	font-size: 2em;
 	padding: 0.5em;
 	display:inline-flex;
 }
 
-.titleOne {
+.title {
 	float:right;
-	margin-right: calc(15vw + 1em);
-	margin-top: 10vh;
 	background-color: #000000;
 	color: #ffffff;
 	font-family: Courier, Times;
@@ -41,74 +41,84 @@ body {
 	padding: 0.5em;
 }
 
-.titleOnePlus {
+.plus {
 	clear:right;
-	float: right;
-	margin-right: calc(15vw + 1em);
 	margin-top: 1em;
+}
+
+.section {
+	padding-top: 3em;
+	padding-bottom:3em;
+	padding-left:20vw;
+	padding-right:20vw;
+	overflow:visible;
+	display: inline-block;
+}
+
+#wordy {
+	min-height: calc(100vh - 6em);
 	background-color: #000000;
-	color: #ffffff;
-	font-family: Courier, Times;
-	font-size: 2em;
-	padding: 0.5em;
 }
 
-.sectionOne {
-	min-height: calc(100vh - 12em);
-	background-color: #F5F5F6;
-	padding-top: 6em;
-	padding-bottom:6em;
-	overflow: visible;
-}
-
-.sectionTwo {
-	min-height: calc(100vh - 12em);
-	background-color: #E1E2E1;
-	padding-top: 6em;
-	padding-bottom:6em;
-}
-
-.sectionThree {
-	min-height: calc(100vh - 12em);
-	background-color: #F5F5F6;
-	padding-top: 6em;
-	padding-bottom:6em;
-}
-
-.hwrapper {
-	text-align: left;
-}
-
-.pwrapper {
-	width:70vw;
-	margin: 0 auto;
-	display:block;
+#sketchy {
+	min-height: calc(100vh - 6em);
+	background-color: #ffffff;
 }
 
 h2 {
 	font-size:2em;
-	font-family: Verdana, Arial;
+	font-family: Courier, Times;
 	font-weight: 800;
 	padding:0.5em;
-	display: inline;
-	margin:1.5em;
-	margin-left: calc(15vw + 1em);
-	background-color: #ff5db6
-;
+	margin-top:0em;
+	margin-bottom:0em;
+	background-color: #ff5db6;
+	display:inline-block;
 }
 
-p {
+p, ul {
 	font-size: 1.33333em;
 	font-family: Courier, Times;
 	line-height: 2em;
 	padding:0.5em;
-	margin:1.5em;
+	margin-top:1em;
+	margin-bottom:1em;
 	color: #000000;
-	background-color: #ff5db6;
+	background-color: #ffffff;
+}
+
+ul{
+	clear:both;
+	list-style-type: square;
+	padding-left:2em;
+}
+
+.white {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.black {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.right {
+	text-align: left;
+	margin-top:0em;
+	margin-bottom:0em;
+	float:right;
+}
+
+.left {
+	text-align: left;
+	margin-top:0em;
+	margin-bottom:0em;
+	float:left;
 }
 
 .footer {
-	background-color: #E1E2E1;
+	background-color: #f70d8a;
 	height:8em;
 	font-family: Courier, Times;
 	display:block;
@@ -125,12 +135,16 @@ p {
 	text-decoration: none;
 }
 
-a {
+.white a {
 	color: #000000;
 }
 
+.black a {
+	color: #ffffff;
+}
+
 a svg:hover #facebook, a svg:hover #linkedin { 
-  fill: #f70d8a;
+  fill:#ffffff;
 }
 
 .copyright {
@@ -139,32 +153,20 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	font-weight: bold;
 }
 
-.imageSlider {
-	margin:2em;
-	padding:0.5em;
-	background-color:#ffffff;
-	height:300px;
-	overflow:hidden;
-}
-
-.imageSlider img {
-	border-left:1em; 
-	border-right: 1em;
-	height:300px;
-	float:left;
-}
-
-
 @media screen and (max-width: 600px){
 
 	.hero {
-		min-height: 400px;
+		min-height: 550px;
+		padding-left:1em;
+		padding-right:1em;
 	}
 
-	.sectionOne , .sectionTwo , .sectionThree {
-	min-height: calc(100vh - 2em);
-	padding-top: 1em;
-	padding-bottom:1em;
+	.section {
+		min-height: calc(100vh - 2em);
+		padding-top: 1em;
+		padding-bottom:1em;
+		padding-left:1em;
+		padding-right:1em;
 	}
 
 	.titleZeroDesktop {
@@ -174,43 +176,17 @@ a svg:hover #facebook, a svg:hover #linkedin {
 
 	.titleZeroMobile {
 		float:right;
-		margin-right: 0.5em;
-		margin-top: 10vh;
 		background-color: #ffffff;
 		color: #000000;
 		font-family: Courier, Times;
 		font-size: 2em;
 		padding: 0.5em;
 		display:inline-flex;
-	}
-
-	.titleOne {
-		margin-right: 0.5em;
-		margin-left: 0.5em;
-		margin-top: 1em;
-	}
-
-	.titleOnePlus {
-		margin-right: 0.5em;
-		margin-left: 0.5em;
-	}
-
-	.pwrapper {
-		width:100vw;
+		margin-bottom:1em;
 	}
 
 	h2 {
-		margin-left:calc(0vw + 0.5em);
 		display: inline-flex;
-	}
-
-	p {
-		margin: 0.75em;
-		margin-top:1em;
-	}
-
-	.imageSlider {
-		margin:0.75em;
 	}
 
 }

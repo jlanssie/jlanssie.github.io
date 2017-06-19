@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 //List of quotes
 var track1Quotes = ["gaga","red-hot","wacky","rabid","keen"];
-var track2Quotes = ["web geek","editor-in-dictator","homo journalisticus","wannabe paperback writer","designer"];
+var track2Quotes = ["wannabe paperback writer","homo journalisticus","pencil-handler","tinker","misosopher hater"];
 var track3Quotes = ["with fruity","with cool","with hip","with fresh","with askew"];
 var track4Quotes = ["ideas","opinions","theories","views","suspicions"];
 
@@ -60,7 +60,3 @@ function changeTrack4(){
     else
         m4++;
 }
-
-/*Image slider*/
-
-
