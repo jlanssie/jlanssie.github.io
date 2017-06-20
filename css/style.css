@@ -117,9 +117,13 @@ ul{
 	float:left;
 }
 
-.imgcontainer {
+.imgContainer {
 	width:calc(30vw - 1.5em);
 }
+
+.afterSecond {
+		margin-top: 1em;
+	}
 
 .footer {
 	background-color: #f70d8a;
@@ -198,20 +202,22 @@ a svg:hover #facebook, a svg:hover #linkedin {
 		display: inline-flex;
 	}
 
-	.imgcontainer {
+	.imgContainer {
 		width:calc(100vw - 2.5em);
 		clear:both;
-	}
-
-	.right {
-	float:left;
-	margin-top: 1em;
-	margin-bottom: 1em;
 	}
 
 	.design {
 	width:calc(100vw - 2.5em);
 	display: block;
+	}
+
+	.second {
+		margin-top: 1em;
+	}
+
+	.afterSecond {
+		margin-top: 1em;
 	}
 
 }
