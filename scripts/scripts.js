@@ -1,3 +1,13 @@
+/* Quoteloop */
+
+function fade($ele) {
+    $ele.fadeIn(1000).delay(4000).fadeOut(1000, function() {
+        var $next = $(this).next('.quote');
+        fade($next.length > 0 ? $next : $(this).parent().children().first());
+   });
+}
+fade($('.quoteLoop > .quote').first());
+
 /* Copyright notice automatically updated to the current year */
 
 $(document).ready(function () {
@@ -9,8 +19,8 @@ $(document).ready(function () {
 
 //List of quotes
 var track1Quotes = ["gaga","red-hot","wacky","rabid","keen"];
-var track2Quotes = ["wannabe paperback writer","homo journalisticus","pencil-handler","tinker","misosopher hater"];
-var track3Quotes = ["with fruity","with cool","with hip","with fresh","with askew"];
+var track2Quotes = ["wannabe paperback writer","homo journalisticus","pencil-handler","tinker","walking philosopher","fox on the run"];
+var track3Quotes = ["with fruity","with cool","with hip","with fresh","with askew", "with wild"];
 var track4Quotes = ["ideas","opinions","theories","views","suspicions"];
 
 //Counter for loop

@@ -147,6 +147,11 @@ ul{
 	color: #ffffff;
 }
 
+.design {
+	width: calc(30vw - 1.5em);
+	display: block;
+}
+
 a svg:hover #facebook, a svg:hover #linkedin { 
   fill:#ffffff;
 }
@@ -194,13 +199,19 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	}
 
 	.imgcontainer {
-	clear:both;
+		width:calc(100vw - 2.5em);
+		clear:both;
 	}
 
 	.right {
 	float:left;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	}
+
+	.design {
+	width:calc(100vw - 2.5em);
+	display: block;
 	}
 
 }
