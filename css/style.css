@@ -8,10 +8,9 @@ body {
 }
 
 .hero {
-	height: calc(100vh - 15vh);
-	min-height: 400px;
+	min-height: calc(100vh - 10vh);
 	background-color: #f70d8a;
-	padding-top:15vh;
+	padding-top:10vh;
 	padding-left:20vw;
 	padding-right:20vw;
 	overflow:visible;
@@ -39,97 +38,24 @@ body {
 	font-family: Courier, Times;
 	font-size: 2em;
 	padding: 0.5em;
+	clear:right;
 }
 
 .plus {
-	clear:right;
 	margin-top: 1em;
 }
 
-.section {
-	padding-top: 3em;
-	padding-bottom:3em;
-	padding-left:20vw;
-	padding-right:20vw;
-	overflow:visible;
-	display: inline-block;
-}
-
-#wordy {
-	min-height: calc(100vh - 6em);
-	background-color: #000000;
-}
-
-#sketchy {
-	min-height: calc(100vh - 6em);
+.more {
 	background-color: #ffffff;
-}
-
-h2 {
-	font-size:2em;
-	font-family: Courier, Times;
-	font-weight: 800;
-	padding:0.5em;
-	margin-top:0em;
-	margin-bottom:0em;
-	background-color: #ff5db6;
-	display:inline-block;
-}
-
-p, ul {
-	font-size: 1.33333em;
-	font-family: Courier, Times;
-	line-height: 2em;
-	padding:0.5em;
-	margin-top:1em;
-	margin-bottom:1em;
 	color: #000000;
-	background-color: #ffffff;
 }
-
-ul{
-	clear:both;
-	list-style-type: square;
-	padding-left:2em;
-}
-
-.white {
-	color: #000000;
-	background-color: #ffffff;
-}
-
-.black {
-	color: #ffffff;
-	background-color: #000000;
-}
-
-.right {
-	text-align: left;
-	margin-top:0em;
-	margin-bottom:0em;
-	float:right;
-}
-
-.left {
-	text-align: left;
-	margin-top:0em;
-	margin-bottom:0em;
-	float:left;
-}
-
-.imgContainer {
-	width:calc(30vw - 1.5em);
-}
-
-.afterSecond {
-		margin-top: 1em;
-	}
 
 .footer {
 	background-color: #f70d8a;
 	height:8em;
 	font-family: Courier, Times;
-	display:block;
+	display:none;
+	clear:both;
 }
 
 .social {
@@ -166,12 +92,31 @@ a svg:hover #facebook, a svg:hover #linkedin {
 	font-weight: bold;
 }
 
+@media screen and (max-width: 870px){
+	.titleZeroDesktop {
+		display:none;
+		visibility: none;
+	}
+
+	.titleZeroMobile {
+		float:right;
+		background-color: #ffffff;
+		color: #000000;
+		font-family: Courier, Times;
+		font-size: 2em;
+		padding: 0.5em;
+		display:inline-flex;
+		margin-bottom:1em;
+	}
+}
+
 @media screen and (max-width: 600px){
 
 	.hero {
-		min-height: 550px;
+		min-height: calc(100vh - 1em);
 		padding-left:1em;
 		padding-right:1em;
+		padding-top: 1em;
 	}
 
 	.section {
@@ -197,27 +142,14 @@ a svg:hover #facebook, a svg:hover #linkedin {
 		display:inline-flex;
 		margin-bottom:1em;
 	}
+}
 
-	h2 {
-		display: inline-flex;
+@media screen and (max-width: 350px){
+	.titleZeroMobile {
+		font-size: 1.5em;
 	}
 
-	.imgContainer {
-		width:calc(100vw - 2.5em);
-		clear:both;
+	.title {
+		font-size: 1.5em;
 	}
-
-	.design {
-	width:calc(100vw - 2.5em);
-	display: block;
-	}
-
-	.second {
-		margin-top: 1em;
-	}
-
-	.afterSecond {
-		margin-top: 1em;
-	}
-
 }

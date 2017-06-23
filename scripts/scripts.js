@@ -1,13 +1,3 @@
-/* Quoteloop */
-
-function fade($ele) {
-    $ele.fadeIn(1000).delay(4000).fadeOut(1000, function() {
-        var $next = $(this).next('.quote');
-        fade($next.length > 0 ? $next : $(this).parent().children().first());
-   });
-}
-fade($('.quoteLoop > .quote').first());
-
 /* Copyright notice automatically updated to the current year */
 
 $(document).ready(function () {
