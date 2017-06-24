@@ -23,7 +23,7 @@ body {
 }
 
 .body {
-	min-height: calc(100vh - 10vh - 8em);
+	min-height: calc(100vh - 10vh - 5em);
 	background-color: #ffffff;
 	padding-top:10vh;
 	padding-left:20vw;
@@ -99,7 +99,7 @@ body {
 
 .footer {
 	background-color: #ffffff;
-	height:8em;
+	height:5em;
 	font-family: Courier, Times;
 	display:inherit;
 }
@@ -151,7 +151,7 @@ body {
 	}
 
 	.body {
-		min-height: calc(100vh - 9em);
+		min-height: calc(100vh - 6em);
 		padding-left:1em;
 		padding-right:1em;
 		padding-top: 1em;
@@ -194,7 +194,7 @@ body {
 	}
 
 	.body {
-		min-height: calc(100vh - 9em);
+		min-height: calc(100vh - 6em);
 	}
 
 	.titleZeroMobile {
