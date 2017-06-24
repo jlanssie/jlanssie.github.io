@@ -1,3 +1,19 @@
+/* Page view switch */
+function switchView() {
+    var x = document.getElementById("menu");
+    if (x.className === "switchOFF") {
+        x.className = "switchON";
+    } else {
+        x.className = "switchOFF";
+    }
+    var x = document.getElementById("hero");
+    if (x.className === "switchOFF") {
+        x.className = "switchON";
+    } else {
+        x.className = "switchOFF";
+    }
+};
+
 /* Copyright notice automatically updated to the current year */
 
 $(document).ready(function () {
