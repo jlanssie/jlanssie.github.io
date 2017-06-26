@@ -3,15 +3,9 @@ body {
 	padding:0;
 	border:0;
 	margin:0;
-	font-size:1em;
-	font-family: Courier, Times;
 	background-color: #f70d8a;
-}
-
-#menu {
-	min-height: calc(100vh - 10vh);
-	background-color: #ffffff;
-	z-index:100;
+	font-family: Courier, Times;
+	font-size: 1em;
 }
 
 .switchOFF {
@@ -20,16 +14,6 @@ body {
 
 .switchON {
 	display:block;
-}
-
-.body {
-	min-height: calc(100vh - 10vh - 5em);
-	background-color: #ffffff;
-	padding-top:10vh;
-	padding-left:20vw;
-	padding-right:20vw;
-	overflow:visible;
-	z-index:1;
 }
 
 #hero {
@@ -44,7 +28,6 @@ body {
 
 .titleZeroMobile {
 		display:none;
-		visibility: none;
 	}
 
 .titleZeroDesktop {
@@ -61,7 +44,6 @@ body {
 	float:right;
 	background-color: #000000;
 	color: #ffffff;
-	font-family: Courier, Times;
 	font-size: 2em;
 	padding: 0.5em;
 	clear:right;
@@ -71,30 +53,30 @@ body {
 	margin-top: 1em;
 }
 
-.intro{
-	background-color: #000000;
-	color:#ffffff;
-	margin-right:0;
-}
-
 .more {
 	background-color: #ffffff;
 	color: #000000;
 }
 
-.more a {
-	text-decoration: none;
-	color:#000000;
+#about {
+	background-color: #ffffff;
+	z-index:100;
 }
 
-.less {
+.content {
+	min-height: calc(100vh - 10vh - 6em);
+	background-color: #ffffff;
+	padding-top:10vh;
+	padding-left:20vw;
+	padding-right:20vw;
+	overflow:visible;
+	z-index:1;
+}
+
+.intro{
 	background-color: #000000;
-	color: #ffffff;
-}
-
-.less a {
-	text-decoration: none;
 	color:#ffffff;
+	margin-right:0;
 }
 
 .footer {
@@ -102,11 +84,12 @@ body {
 	height:5em;
 	font-family: Courier, Times;
 	display:inherit;
+	clear:both;
 }
 
 .copyright {
 	float: right;
-	padding: 1em;
+	padding: 2em;
 	font-weight: bold;
 	display:inherit;
 	font-size: 1em;
@@ -114,8 +97,7 @@ body {
 
 .social {
 		clear: both;
-	    float: right;
-	    font-size: 2em;
+	    font-size: 1.5em;
 	    padding: 0.5em;
 }
 
@@ -123,10 +105,13 @@ body {
 	color:#000000;
 }
 
+.first {
+	padding-top:2em;
+}
+
 @media screen and (max-width: 870px){
 	.titleZeroDesktop {
 		display:none;
-		visibility: none;
 	}
 
 	.titleZeroMobile {
@@ -139,6 +124,12 @@ body {
 		display:inline-flex;
 		margin-bottom:1em;
 	}
+
+	.intro{
+	background-color: #000000;
+	color:#ffffff;
+	margin-right:0;
+}
 }
 
 @media screen and (max-width: 600px){
@@ -150,8 +141,8 @@ body {
 		padding-top: 1em;
 	}
 
-	.body {
-		min-height: calc(100vh - 6em);
+	.content {
+		min-height: calc(100vh - 7em);
 		padding-left:1em;
 		padding-right:1em;
 		padding-top: 1em;
@@ -167,7 +158,6 @@ body {
 
 	.titleZeroDesktop {
 		display:none;
-		visibility: none;
 	}
 
 	.titleZeroMobile {
@@ -193,8 +183,8 @@ body {
 		min-height: 500px;
 	}
 
-	.body {
-		min-height: calc(100vh - 6em);
+	.content {
+		min-height: calc(100vh - 7em);
 	}
 
 	.titleZeroMobile {

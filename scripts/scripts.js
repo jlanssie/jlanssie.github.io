@@ -1,6 +1,6 @@
 /* Page view switch */
 function switchView() {
-    var x = document.getElementById("menu");
+    var x = document.getElementById("about");
     if (x.className === "switchOFF") {
         x.className = "switchON";
     } else {
