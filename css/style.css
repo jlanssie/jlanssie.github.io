@@ -53,9 +53,27 @@ body {
 	margin-top: 1em;
 }
 
+@keyframes flickerAnimation {
+  0%   { background-color: #ffffff; color: #000000; }
+  100%  { background-color: #000000; color: #ffffff; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { background-color: #ffffff; color: #000000; }
+  100%  { background-color: #000000; color: #ffffff; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { background-color: #ffffff; color: #000000; }
+  100%  { background-color: #000000; color: #ffffff; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { background-color: #ffffff; color: #000000; }
+  100%  { background-color: #000000; color: #ffffff; }
+}
 .more {
-	background-color: #ffffff;
-	color: #000000;
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
 }
 
 #about {
