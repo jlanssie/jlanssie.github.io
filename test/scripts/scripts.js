@@ -28,6 +28,7 @@ function calculator(){
 	brutoMonthCalc();
 	VAACalc();
 	console.log("price per month is =" + brutoMonth + VAA);
+	document.write("price per month is =" + brutoMonth + VAA);
 };    
 
 calculator();
