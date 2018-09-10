@@ -25,7 +25,9 @@ function calculator(){
 		var VAA =  6/7*catalogValue*(0.055+((c02-105)*0.001));
 		console.log(VAA);
 	}
+	brutoMonthCalc();
+	VAACalc();
+	console.log("price per month is =" + brutoMonth + VAA);
 };
 
 calculator();
-console.log("price per month is =" + brutoMonth + VAA);
