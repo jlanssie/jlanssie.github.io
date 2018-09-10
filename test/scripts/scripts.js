@@ -27,4 +27,5 @@ function calculator(){
 	}
 };
 
-console.log("Brutoprijs per maand =" + brutoMonth + VAA);
+calculator();
+console.log("price per month is =" + brutoMonth + VAA);
