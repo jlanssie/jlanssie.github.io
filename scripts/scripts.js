@@ -1,19 +1,3 @@
-/* Page view switch */
-function switchView() {
-    var x = document.getElementById("about");
-    if (x.className === "switchOFF") {
-        x.className = "switchON";
-    } else {
-        x.className = "switchOFF";
-    }
-    var x = document.getElementById("hero");
-    if (x.className === "switchOFF") {
-        x.className = "switchON";
-    } else {
-        x.className = "switchOFF";
-    }
-};
-
 /* Copyright notice automatically updated to the current year */
 
 $(document).ready(function () {
@@ -40,7 +24,7 @@ setInterval(changeTrack1, 5500);
 
 //Function to change div to a quote and change counter.
 function changeTrack1(){
-    document.getElementById("track1").innerHTML=(track1Quotes[m1]);
+    document.getElementById("1").innerHTML=(track1Quotes[m1]);
     if(m1 == 4)
         m1 = 0;
     else
@@ -50,7 +34,7 @@ function changeTrack1(){
 setInterval(changeTrack2, 2000);
 
 function changeTrack2(){
-    document.getElementById("track2").innerHTML=(track2Quotes[m2]);
+    document.getElementById("2").innerHTML=(track2Quotes[m2]);
     if(m2 == 4)
         m2 = 0;
     else
@@ -60,7 +44,7 @@ function changeTrack2(){
 setInterval(changeTrack3, 6500);
 
 function changeTrack3(){
-    document.getElementById("track3").innerHTML=(track3Quotes[m3]);
+    document.getElementById("3").innerHTML=(track3Quotes[m3]);
     if(m3 == 4)
         m3 = 0;
     else
@@ -70,7 +54,7 @@ function changeTrack3(){
 setInterval(changeTrack4, 4500);
 
 function changeTrack4(){
-    document.getElementById("track4").innerHTML=(track4Quotes[m4]);
+    document.getElementById("4").innerHTML=(track4Quotes[m4]);
     if(m4 == 4)
         m4 = 0;
     else

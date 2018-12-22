@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+	<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+	<!-- Style-->
+	<style>
+		html, body {
+		    width: 100%;
+		    height:800px;
+		    padding: 0px;
+		    margin: 0px;
+		}
+		#timeline-embed {
+		    height: 100%;
+		}
+		.tl-storyslider {
+			height: 635px;
+		}
+		.tl-slide {
+			background-color: #f1f1f1;
+		}
+		.tl-timeline {
+			color: #1f1f1f;
+		}
+		.tl-menubar{
+			border-bottom-right-radius: 0px;
+    		border-top-right-radius: 0px;
+		}
+		.tl-menubar-button {
+			color:#1f1f1f;
+		}
+		.tl-timenav{
+			background-color: #fff295;
+			    border-top: 1px solid #fff295;
+		}
+		.tl-timeaxis-background {
+			background-color: #fff295;
+			border-top: 1px solid #1f1f1f;
+		}
+		.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick {
+			color:#1f1f1f;	
+		}
+		.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick {
+			color: #1f1f1f;
+		}
+		.tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick:before, .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick:before {
+			border-left: 1px solid #1f1f1f;
+			border-color: #1f1f1f;
+		}
+		.tl-timemarker .tl-timemarker-content-container {
+			background-color: #f1f1f1;
+			border-top-left-radius: 0px;
+		    border-top-right-radius: 0px;
+		    border-bottom-right-radius: 0px;
+		}
+		.tl-timenav .tl-attribution {
+			visibility: hidden;
+		}
+		.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
+			color: #1f1f1f;
+		}
+		@media only screen and (max-width: 600px) {
+    		html, body {
+		    width: 100%;
+		    height:800px;
+		    padding: 0px;
+		    margin: 0px;
+			}
+			#timeline-embed {
+			    height: 100%;
+			}
+			.tl-storyslider {
+				height: 635px;
+			}
+		}		
+	</style>
+</head>
+<body>
+	<div id='timeline-embed'></div>
+	<script type="text/javascript">
+        // The TL.Timeline constructor takes at least two arguments:
+        // the id of the Timeline container (no '#'), and
+        // the URL to your JSON data file or Google spreadsheet.
+        // the id must refer to an element "above" this code,
+        // and the element must have CSS styling to give it width and height
+        // optionally, a third argument with configuration options can be passed.
+        // See below for more about options.
+        timeline = new TL.Timeline('timeline-embed',
+          'timeline.json');
+    </script>
+</body>
+</html>

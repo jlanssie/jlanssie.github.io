@@ -38,66 +38,50 @@
 </head>
 <body onload="changeTrack1(), changeTrack2(), changeTrack3(), changeTrack4()">
 <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M45DG3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M45DG3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- hero -->
-    <div id="hero" class="switchON">
-        <div class="titleZeroMobile" id="track0">
-            Jeremy Lanssiers
+<!--googleoff: all-->
+    <div id="hero">
+        <div class="track main" id="0">
+            <a href="#about">Jeremy Lanssiers</a>
         </div>
-        <div class="title" id="track1">
+<!--googleon: all-->
+        <div class="track" id="1">
             gaga
         </div>
-        <div class="titleZeroDesktop" id="track0">
-            Jeremy Lanssiers
-        </div>
-        <div class="title plus" id="track2">
+        <div class="track" id="2">
             tinker
         </div>
-        <div class="title plus" id="track3">
+        <div class="track" id="3">
             with fruity
         </div>
-        <div class="title plus" id="track4">
+        <div class="track" id="4">
             suspicions
         </div>
-        <a href="javascript:void(0)" onclick="switchView()"><div class="title plus more">
-            +++
-        </div></a>
     </div>
 
-<!-- about -->
-    <div id="about" class="switchOFF">
-        <div class="content">
-            <div class="titleZeroMobile intro" id="track0">
-            Jeremy Lanssiers
-            </div>
-            <div class="titleZeroDesktop intro" id="track0">
-            Jeremy Lanssiers
-            </div>
-            <p class="social first"><strong>for friends</strong><br/>
-                <a href="https://www.goodreads.com/jlanssie" target="blank">goodreads</a>, <a href="http://www.imdb.com/user/ur71913020/?ref_=nb_usr_prof_0" target="blank">imdb</a>,  <a href="https://www.youtube.com/channel/UCMKnFY8ahmPhn2z_BWhkJUg" target="blank">youtube</a>, <a href="https://open.spotify.com/user/jlanssie" target="blank">spotify</a>
-            </p>
-            <p class="social"><strong>for employers</strong><br/>
-                <a href="https://www.linkedin.com/in/jlanssie/" target="blank">linkedin</a>
-            </p>
-            <p class="social"><strong>for art lovers</strong><br/>
-                <a href="https://www.behance.net/jlanssie5c83" target="blank">behance</a>, <a href="https://pinterest.com/jlanssie/" target="blank">pinterest</a>
-            </p>
-            <p class="social"><strong>for coders</strong><br/>
-                <a href="https://github.com/jlanssie" target="_blank">github</a>, <a href="https://codepen.io/jlanssie" target="_blank">codepen</a>, <a href="https://stackoverflow.com/users/6830765/jlanssie" target="_blank">stackoverflow</a>
-            </p>
-            <p class="social"><strong>for scholars</strong><br/>
-                <a href="https://vub.academia.edu/jlanssie" target="_blank">academia</a>
-            </p>
-            <a href="javascript:void(0)" onclick="switchView()"><div class="title plus more">
-                ---
-            </div></a>
-        </div>
-        <div class="footer">
-            <div class="copyright"></div>
-        </div>
+    <div class="section" id="about">
+        <h1>What's the skinny?</h1>
+        <p>I'm just some dude who likes writing, doodling and effin around with web. I've worked as a print editor for over a hundred children's books and as a web editor for an economical newspaper. Right now, I'm a web all-rounder for an opera house. In my free time, I'm writing poetry and started working on a novel. I've also done a bit of journalism back in the day.</p>
+        <a class="button" href="#words">Read about written stuff</a>
+        <a class="button" href="#webdev">To the web thingies!</a>
     </div>
+
+    <div class="section" id="words">
+        <h1>Words</h1>
+    </div>
+
+    <div class="section" id="webdev">
+        <h1>Webdev</h1>
+    </div>
+
+    <footer>
+        <div class="copyright"></div>
+    </footer>
 </body>
 </html>
