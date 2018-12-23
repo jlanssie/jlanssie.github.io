@@ -9,6 +9,12 @@ body {
 	line-height: 2em;
 }
 
+div {
+	padding:0;
+	border: 0;
+	margin: 0;
+}
+
 div#hero {
 	min-height: 100vh;
 	background-color: #f70d8a;
@@ -27,6 +33,7 @@ div.section {
 	padding-right:20vw;
 	overflow:visible;
 	z-index:1;
+	clear:both;
 }
 
 div.track {
@@ -54,6 +61,13 @@ div.track.main a {
 	color: #000000;
 }
 
+div.break {
+	height: 10vh;
+	background-color: #f70d8a;
+	width: 100%;
+	clear:both;
+}
+
 h1 {
 	text-align: center;
 	font-family: Helvetica, sans-serif;
@@ -72,7 +86,7 @@ h1:after {
 	margin-top: 0.5em;
 }
 
-a.button {
+a.btn {
 	background-color: #000000;
 	color: #ffffff;
 	font-family: Helvetica, sans-serif;
@@ -90,7 +104,7 @@ a.button {
 	width: -moz-fit-content;
 }
 
-a.button:hover {
+a.btn:hover {
 	background-color: #f70d8a;
 	color: #000000;
 }
@@ -98,17 +112,29 @@ a.button:hover {
 .footer {
 	background-color: #ffffff;
 	height:5em;
-	font-family: Courier, Times, serif;
 	display:inherit;
 	clear:both;
 }
 
-.copyright {
-	float: right;
+.footer-content {
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
 	padding: 2em;
-	font-weight: bold;
-	display:inherit;
+	font-weight: 800;
 	font-size: 1em;
+}
+
+.footer-content.social {
+	float: left;
+}
+
+.footer-content.copyright {
+	float: right;
+	text-align: right;
+}
+
+.social-btn {
+	vertical-align: middle;
 }
 
 @media screen and (max-width: 650px){
@@ -136,5 +162,17 @@ a.button:hover {
 
 	.track {
 		font-size: 1.5em;
+	}
+
+	.footer-content {
+		font-size: 1em;
+		padding-right: 1em;
+		padding-top: 1em;
+		padding-bottom: 0;
+	}
+
+	.footer-content.social {
+		float: none;
+		text-align: center;
 	}
 }
