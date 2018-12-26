@@ -15,14 +15,38 @@ div {
 	margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #hero {
-	min-height: 100vh;
+	height: 100vh;
 	background-color: #f70d8a;
 	padding-top:10vh;
 	padding-left:20vw;
 	padding-right:20vw;
 	overflow:visible;
 	z-index:1;
+}
+
+.bodyWrapper {
+	background-color: #ffffff;
+}
+
+.separator {
+	background: repeating-linear-gradient(
+	  45deg,
+	  #ffffff,
+	  #ffffff 10px,
+	  #000000 10px,
+	  #000000 20px
+	);
+	width: 100%;
+	height: 5vh;
+	overflow: visible;
+	clear: both;
+	border-top: 15vh solid white; 
+	border-bottom: 5vh solid white; 
 }
 
 .section {
@@ -34,6 +58,10 @@ div {
 	overflow:visible;
 	z-index:1;
 	clear:both;
+}
+
+#webdev {
+	padding-bottom: 10vh;
 }
 
 .track {
@@ -70,6 +98,7 @@ div {
 
 h1 {
 	text-align: center;
+	font-size: 2em;
 	font-family: Helvetica, sans-serif;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -84,6 +113,14 @@ h1:after {
 	border-top: 5px solid #f70d8a;
 	margin: 0 auto;
 	margin-top: 0.5em;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: Helvetica, sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 a.btn {
@@ -109,6 +146,65 @@ a.btn:hover {
 	color: #000000;
 }
 
+.showcaseWriter {
+	clear:left;
+}
+
+.showcaseWriter img {
+	float:left;
+	width: 25%;
+	margin: 0.5em;
+}
+
+.showcaseWriter p {
+	padding: 0.5em;
+	padding-top: 0em;
+}
+
+.showcaseEditor {
+	clear: left;
+	position: relative;
+	display: block;
+	padding:0.5em;
+}
+
+.showcaseEditorWrapper {
+	height: 25vh;
+	width: 25vh;
+}
+
+.showcaseEditorImg {
+	height: 25vh;
+	display: block;
+	margin: 0 auto;
+	opacity: 100;
+}
+
+.showcaseEditorImg:hover {
+	
+}
+
+.showcaseEditorP {
+	height: 25vh;
+	width: 25vh;
+	opacity:0;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	color:#ffffff;
+	position: absolute;
+}
+
+.showcaseEditorP:hover {
+	opacity:100;
+	background-color:rgba(0, 0, 0, 0.25);
+}
+
+.languages {
+	background: #f1f1f1;
+	padding: 1em;
+}
+
 .footer {
 	background-color: #ffffff;
 	height:5em;
@@ -116,19 +212,21 @@ a.btn:hover {
 	clear:both;
 }
 
-.footer-content {
+.social {
 	font-family: Helvetica, sans-serif;
 	text-transform: uppercase;
 	padding: 2em;
 	font-weight: 800;
 	font-size: 1em;
-}
-
-.footer-content.social {
 	float: left;
 }
 
-.footer-content.copyright {
+.copyright {
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding: 2em;
+	font-weight: 800;
+	font-size: 1em;
 	float: right;
 	text-align: right;
 }
@@ -149,6 +247,21 @@ a.btn:hover {
 		font-size: 1.5em;
 	}
 
+	.showcaseWriter img {
+		float:none;
+		margin: 0 auto;
+		display: block;
+	}
+
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.25em;
+	}
+
 	.section {
 		min-height: calc(100vh - 2em);
 		padding-top: 1em;
@@ -161,6 +274,7 @@ a.btn:hover {
 @media screen and (max-width: 413px){
 
 	.track {
+		font-size: 1.5em;
 		float: none;
 		text-align: center;
 		width: fit-content;
@@ -169,15 +283,27 @@ a.btn:hover {
 		margin-top: 0px;margin-top: 1em;
 	}
 
-	.footer-content {
-		font-size: 1em;
-		padding-right: 1em;
-		padding-top: 1em;
-		padding-bottom: 0;
+	.showcaseWriter img {
+		float:none;
+		margin: 0 auto;
+		display: block;
 	}
 
-	.footer-content.social {
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	.social, .copyright {
 		float: none;
 		text-align: center;
+		font-size: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
+		padding-top: 1em;
+		padding-bottom: 0;
 	}
 }
