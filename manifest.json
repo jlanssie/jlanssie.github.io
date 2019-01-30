@@ -1,0 +1,16 @@
+{
+  "short_name": "JL",
+  "name": "jeremylanssiers.com",
+  "icons": [
+    {
+      "src": "/assets/avatar.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://www.jeremylanssiers.com",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "description": "A simple website for and by Jeremy Lanssiers",
+  "theme_color": "#f70d8a"
+}

@@ -60,3 +60,26 @@ function changeTrack4(){
     else
         m4++;
 }
+
+/*Randomize the case for PowezieLabo paragraph*/
+
+function randomizeCase(){
+  var randomCaseTxt1 = document.getElementById('randomCaseTxt1');
+  var randomCaseTxt2 = document.getElementById('randomCaseTxt2');
+  var randomCaseTxt3 = document.getElementById('randomCaseTxt3');
+
+  randomCaseTxt1.textContent = randomCaseTxt1.textContent.split('').map(function(v) {
+    var chance = Math.round(Math.random());
+    return v = chance ? v.toUpperCase() : v.toLowerCase();
+  }).join('');
+  randomCaseTxt2.textContent = randomCaseTxt2.textContent.split('').map(function(v) {
+    var chance = Math.round(Math.random());
+    return v = chance ? v.toUpperCase() : v.toLowerCase();
+  }).join('');
+  randomCaseTxt3.textContent = randomCaseTxt3.textContent.split('').map(function(v) {
+    var chance = Math.round(Math.random());
+    return v = chance ? v.toUpperCase() : v.toLowerCase();
+  }).join('');
+}
+
+setInterval(randomizeCase, 500);
