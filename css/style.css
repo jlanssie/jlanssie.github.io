@@ -66,12 +66,50 @@ h3 {
 	font-size: 1.25em;
 }
 
-h4 {
-	font-size: 1.25em;
+h4,
+h5,
+h6 {
+	font-size: 1em;
+}
+
+p {
+	font-family: Courier, Times, serif;
+	font-size: 1em;
+	color: #1f1f1f;
+	line-height: 2em;
+}
+
+p::selection,
+p::-moz-selection {
+  background: #f70d8a;
+}
+
+section {
+	z-index:1;
+	clear:both;
+	margin: 0 auto;
+	padding:5vh 1em 0 1em;
+	width: calc(650px - 2em);
+	background-color: #ffffff;
+	overflow:visible;
+}
+
+section:after {
+	display: block;
+	padding-top: 10vh; 
+	content: " ";
 }
 
 iframe {
 	margin-top: 5vh;
+}
+
+footer {
+	clear:both;
+	display:inherit;
+	height:5em;
+	background-color: #f70d8a;
+	color: #222222;
 }
 
 /*Generic classes*/
@@ -100,38 +138,27 @@ iframe {
 	margin-top: 5vh;
 }
 
-/*Custom classes*/
-
-.socialWrapper {
-	padding-top: calc(5vh - 1em);
-    text-align: center;
+.pink {
+	background-color: #f70d8a;
 }
 
-.socialWrapper li {
-	display: inline-block;
-	margin: .75em;
-    width: 100px;
-    height: 100px;
-    background-color: #f1f1f1;
-}
-
-.socialWrapper li svg .background {
-	fill: #f1f1f1;
-}
-
-.socialWrapper li:hover {
+.black {
 	background-color: #222222;
 }
 
-/*Unique elements*/
-
-#hero {
-	padding:10vh 20vw 0 20vw;
-	min-height: calc(100vh - 10vh);
-	background-color: #f70d8a;
-	overflow:visible;
-	z-index:1;
+.blackTxt {
+	color: #1f1f1f;
 }
+
+.whiteTxt {
+	color: #ffffff;
+}
+
+.centerTxt {
+	text-align: center;
+}
+
+/*Custom classes*/
 
 .track {
 	clear:right;
@@ -166,25 +193,6 @@ iframe {
 	background-color: #ffffff;
 }
 
-section {
-	z-index:1;
-	clear:both;
-	margin: 0 auto;
-	padding:5vh 1em 0 1em;
-	width: calc(650px - 2em);
-	background-color: #ffffff;
-	overflow:visible;
-}
-
-.sectionSeparator {
-	clear: both;
-	border-top: 5vh solid white;
-	border-bottom: 1px solid #f1f1f1;
-	padding-bottom: 5vh; 
-  	height: 1px;
-	overflow: visible;
-}
-
 .subSectionSeparator {
 	clear: both;
 	display: block;
@@ -195,10 +203,6 @@ section {
 
 .subSectionBreak {
 	clear: both;
-}
-
-#webdev {
-	padding-bottom: 5vh;
 }
 
 a.btn {
@@ -226,11 +230,48 @@ a.btn:hover {
 	border-top: 5vh solid #ffffff;
 }
 
-.showcaseBook {
+.socialWrapper {
+	margin-top: calc(5vh - 1em);
+	padding: 1em;
+	background-color: #222222;
+    text-align: center;
+}
+
+.socialWrapper li {
+	display: inline-block;
+	margin: .75em;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #ffffff;
+    padding: 5px;
+    background-color: #222222;
+}
+
+.socialWrapper li a svg g path, .socialWrapper li a svg path, .socialWrapper li a svg circle {
+	fill:#ffffff;
+}
+
+.socialWrapper li:hover a svg g path, .socialWrapper li:hover a svg path, .socialWrapper li:hover a svg circle {
+	fill:#222222;
+}
+
+.socialWrapper li:hover {
+	background-color: #ffffff;
+}
+
+#imdb {
+	padding-bottom: calc(80px - 43.19px );
+}
+
+#goodreads {
+	padding-top: calc(40px - 17.27px);
+    padding-bottom: 40px;
+}
+
+.showcaseBook, .showcaseBlog {
 	clear:left;
 	display: flex;
 	padding: 1em;
-	background-color: #1f1f1f;
 }
 
 .showcaseBook img {
@@ -244,16 +285,29 @@ a.btn:hover {
 	color: #ffffff;
 }
 
-a.btnBook {
+a.btnBook, a.btnBlog {
 	padding:0.5em;
 	text-decoration-line: none;
 	text-decoration-color: #222222;
+}
+
+a.btnBook {
 	color: #222222;
 	background-color: #f70d8a;
 }
 
+a.btnBlog {
+	color: #222222;
+	background-color: #ffffff;
+}
+
 a.btnBook:hover {
 	background-color: #ffffff;
+}
+
+a.btnBlog:hover {
+	color: #ffffff;
+	background-color: #222222;
 }
 
 .showcaseList {
@@ -276,14 +330,6 @@ a.btnBook:hover {
 	content: "..."
 }
 
-footer {
-	clear:both;
-	display:inherit;
-	height:5em;
-	background-color: #f70d8a;
-	color: #222222;
-}
-
 .social {
 	float: left;
 	padding: 2em;
@@ -298,6 +344,43 @@ footer {
 	padding: 2em;
 	text-align: right;
 	font-size: 1em;
+}
+
+/*Unique elements*/
+
+#hero {
+	padding:10vh 20vw 0 20vw;
+	min-height: calc(100vh - 10vh);
+	background-color: #f70d8a;
+	overflow:visible;
+	z-index:1;
+}
+
+#grrrrr {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+}
+
+.topLeft {
+	top: 0;
+	left: 0;
+}
+.topRight {
+	top: 0;
+	right: 0;
+}
+.bottomRight {
+	bottom: 0;
+	right: 0;
+}
+.bottomLeft {
+	bottom: 0;
+	left: 0;
+}
+
+#webdev {
+	padding-bottom: 5vh;
 }
 
 @media screen and (max-width: 665px){
@@ -328,7 +411,7 @@ footer {
 		font-size: 1em;
 	}
 
-	.showcaseBook {
+	.showcaseBook, .showcaseBlog {
 		display: block;
 	}
 
@@ -341,8 +424,12 @@ footer {
 		height: auto;
 	}
 
-	.showcaseBook h3, h4, .wrapper p {
+	.showcaseBook h3, .showcaseBook h4, .showcaseBlog h3, .showcaseBlog h4, .wrapper p {
 		text-align: center;	
+	}
+
+	#grrrrr {
+		display: none;
 	}
 }
 

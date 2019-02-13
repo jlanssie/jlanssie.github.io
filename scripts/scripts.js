@@ -1,19 +1,19 @@
-/* Copyright notice automatically updated to the current year */
+/*Copyright notice automatically updated to the current year */
 
 $(document).ready(function () {
         var a = (new Date().getFullYear()>2010) ? new Date().getFullYear() : "2010"
         $("div.copyright").html("&copy; "+ a + " Jeremy Lanssiers");
 });
 
-/* Change title tracks */
+/*Change tracks*/
 
-//List of quotes
+//Track content
 var track1Quotes = ["gaga","red-hot","wacky","rabid","keen"];
 var track2Quotes = ["wannabe paperback writer","homo journalisticus","pencil-handler","tinker","walking philosopher","fox on the run"];
 var track3Quotes = ["with fruity","with cool","with hip","with fresh","with askew", "with wild"];
 var track4Quotes = ["ideas","opinions","theories","views","suspicions"];
 
-//Counter for loop
+//Loop counter
 var m1 = 0;
 var m2 = 0;
 var m3 = 0;
@@ -22,7 +22,7 @@ var m4 = 0;
 //Call the changeText() function every XXXX miliseconds.
 setInterval(changeTrack1, 5500);
 
-//Function to change div to a quote and change counter.
+//Change track content
 function changeTrack1(){
     document.getElementById("1").innerHTML=(track1Quotes[m1]);
     if(m1 == 4)
@@ -61,12 +61,13 @@ function changeTrack4(){
         m4++;
 }
 
-/*Randomize the case for PowezieLabo paragraph*/
+/*Randomize case*/
 
 function randomizeCase(){
   var randomCaseTxt1 = document.getElementById('randomCaseTxt1');
   var randomCaseTxt2 = document.getElementById('randomCaseTxt2');
   var randomCaseTxt3 = document.getElementById('randomCaseTxt3');
+  var randomCaseTxt4 = document.getElementById('randomCaseTxt4');
 
   randomCaseTxt1.textContent = randomCaseTxt1.textContent.split('').map(function(v) {
     var chance = Math.round(Math.random());
@@ -80,6 +81,35 @@ function randomizeCase(){
     var chance = Math.round(Math.random());
     return v = chance ? v.toUpperCase() : v.toLowerCase();
   }).join('');
-}
+  randomCaseTxt4.textContent = randomCaseTxt4.textContent.split('').map(function(v) {
+    var chance = Math.round(Math.random());
+    return v = chance ? v.toUpperCase() : v.toLowerCase();
+  }).join('');
+};
 
-setInterval(randomizeCase, 500);
+setInterval(randomizeCase, 1000);
+
+/*Move the great annoyer*/
+
+function annoyMe(){
+  var annoyer = document.getElementById('grrrrr');
+
+  if (annoyer.className === "topLeft") {
+        annoyer.className = "topRight";
+        return 
+    }
+  if (annoyer.className === "topRight") {
+        annoyer.className = "bottomRight";
+        return
+    }
+  if (annoyer.className === "bottomRight") {
+        annoyer.className = "bottomLeft";
+        return
+    }
+  if (annoyer.className === "bottomLeft") {
+        annoyer.className = "topLeft";
+    } else {
+        annoyer.className = "topRight";
+        return
+    }
+};
