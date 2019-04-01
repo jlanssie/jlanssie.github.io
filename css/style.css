@@ -90,7 +90,7 @@ section {
 	margin: 0 auto;
 	padding:5vh 1em 0 1em;
 	width: calc(650px - 2em);
-	background-color: #ffffff;
+	background-color: inherit;
 	overflow:visible;
 }
 
@@ -191,6 +191,10 @@ footer {
 
 .mainContainer {
 	background-color: #ffffff;
+}
+
+.sectionwrapper {
+	background-color: #fafafa;
 }
 
 .subSectionSeparator {
