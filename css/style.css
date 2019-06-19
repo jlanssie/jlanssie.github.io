@@ -229,10 +229,6 @@ a.btn:hover {
 	color: #222;
 }
 
-.width280 {
-	min-width: 280px;
-}
-
 .title {
 	clear: both;
 	border-top: 5vh solid #fff;
