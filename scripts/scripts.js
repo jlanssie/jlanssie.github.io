@@ -96,28 +96,12 @@ function annoyMe(){
 /*Animate heading underlines*/
 
 $(document).ready(function () {
-
-  var titles = document.querySelectorAll("h1");
+  var titles = document.querySelectorAll("h1, .mark, fadein");
   var h = 1;
   for(var k = 0; k < titles.length; k++){
-    titles[k].id = "title" + h;
+    titles[k].id = "animationId" + h;
     h++;
   }
-
-  var marks = document.querySelectorAll('[class = "mark"]');
-  var h = 1;
-  for(var k = 0; k < marks.length; k++){
-    marks[k].id = "mark" + h;
-    h++;
-  }
-
-  var fadeins = document.querySelectorAll('.fadein');
-  var h = 1;
-  for(var k = 0; k < fadeins.length; k++){
-    fadeins[k].id = "fadein" + h;
-    h++;
-  }
-
 });
 
 $.fn.isInViewport = function() {
@@ -125,72 +109,32 @@ $.fn.isInViewport = function() {
   var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
+  var viewportBottom = viewportTop + ($(window).height())/2;
 
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
 $(window).on('resize scroll', function() {
-  $('h1').each(function() {
-      var activeTitleId = $(this).attr('id');
+  $('h1, .mark').each(function() {
+      var activeElementId = $(this).attr('id');
     if ($(this).isInViewport()) {
-      $('#' + activeTitleId).addClass('active');
+      $('#' + activeElementId).addClass('animated');
     } else {
-      $('#' + activeTitleId).removeClass('active');
+      $('#' + activeElementId).removeClass('animated');
     }
   });
 });
 
-$(window).on('resize scroll', function() {
-  $('.mark').each(function() {
-      var activeMarkId = $(this).attr('id');
-    if ($(this).isInViewport()) {
-      $('#' + activeMarkId).addClass('active');
-    } else {
-      $('#' + activeMarkId).removeClass('active');
-    }
-  });
-});
 /*
 $(window).on('resize scroll', function() {
   $('.fadein, .fadeout').each(function() {
       var activeFadeinId = $(this).attr('id');
     if ($(this).isInViewport()) {
-      $('#' + activeFadeinId).addClass('active');
+      $('#' + activeFadeinId).addClass('animated');
     }
   });
 });
 */
-
-/*Randomize case*/
-/*
-function randomizeCase(){
-  var randomCaseTxt1 = document.getElementById('randomCaseTxt1');
-  var randomCaseTxt2 = document.getElementById('randomCaseTxt2');
-  var randomCaseTxt3 = document.getElementById('randomCaseTxt3');
-  var randomCaseTxt4 = document.getElementById('randomCaseTxt4');
-
-  randomCaseTxt1.textContent = randomCaseTxt1.textContent.split('').map(function(v) {
-    var chance = Math.round(Math.random());
-    return v = chance ? v.toUpperCase() : v.toLowerCase();
-  }).join('');
-  randomCaseTxt2.textContent = randomCaseTxt2.textContent.split('').map(function(v) {
-    var chance = Math.round(Math.random());
-    return v = chance ? v.toUpperCase() : v.toLowerCase();
-  }).join('');
-  randomCaseTxt3.textContent = randomCaseTxt3.textContent.split('').map(function(v) {
-    var chance = Math.round(Math.random());
-    return v = chance ? v.toUpperCase() : v.toLowerCase();
-  }).join('');
-  randomCaseTxt4.textContent = randomCaseTxt4.textContent.split('').map(function(v) {
-    var chance = Math.round(Math.random());
-    return v = chance ? v.toUpperCase() : v.toLowerCase();
-  }).join('');
-};
-
-setInterval(randomizeCase, 1000);
-*/
-
 
 function randomizeCase(){
   var randomCaseTxts = document.querySelectorAll('.randomCaseTxt');

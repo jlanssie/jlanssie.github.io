@@ -55,7 +55,7 @@ h1:after {
 	transition-timing-function: ease-in;
 }
 
-h1.active:after {
+h1.animated:after {
 	width: 75%!important;
  	transition-duration: .5s;
  	transition-timing-function: ease-in;
@@ -383,7 +383,7 @@ a.btnBlog:hover {
 	transition-duration: .25s;
 }
 
-.mark.active {
+.mark.animated {
 	background-position:left bottom;
  	transition-delay: 1s;
  	transition-timing-function: ease-in;
@@ -395,7 +395,7 @@ a.btnBlog:hover {
 	transform: translateY(5px);
 }
 
-.fadein.active {
+.fadein.animated {
 	opacity: 1;
 	transform: translateY(-5px);
 	transition-delay: .5s;
