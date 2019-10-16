@@ -38,22 +38,28 @@ h1 {
 }
 
 h1:before, h1:after {
-	display: flex;
-	margin: 0 auto;
-	margin-top: 0.5em;
-	border-top: 5px solid #f70d8a;
-	height: 0.5em;
-	width: 50%;
-	vertical-align: bottom;
+	display: block;
+	margin: .5em auto;
+	height: 5px;
+	background-color: #f70d8a;
 	content: "";
 }
 
 h1:before {
-	width: 25%;
+	width: 75%;
 }
 
 h1:after {
-	width: 75%;
+	width: 25%;
+	transition-duration: .25s;
+	transition-timing-function: ease-in;
+}
+
+h1.active:after {
+	width: 75%!important;
+ 	transition-duration: .5s;
+ 	transition-timing-function: ease-in;
+ 	transition-delay: .5s;
 }
 
 h2 {
@@ -82,6 +88,15 @@ p {
 p::selection,
 p::-moz-selection {
   background: #f70d8a;
+}
+
+a {
+	color: #1f1f1f;
+}
+
+a:visited {
+	color: #1f1f1f;
+	font-weight: 700;
 }
 
 section {
@@ -135,7 +150,7 @@ footer {
 }
 
 .plusMarginTop {
-	margin-top: 5vh;
+	margin-top: 2.5vh;
 }
 
 .pink {
@@ -193,7 +208,7 @@ footer {
 	background-color: #fff;
 }
 
-.sectionwrapper {
+.sectionWrapper2 {
 	background-color: #fafafa;
 }
 
@@ -212,14 +227,16 @@ footer {
 a.btn {
 	display: block;
 	margin: 0 auto;
-	margin-top: 5vh;
+	margin-top: 2.5vh;
 	border: 0;
 	padding: 0.5em;
 	width: fit-content;
 	width: -moz-fit-content;
+	min-width: 290px;
 	background-color: #222;
 	text-align: center;
-	text-decoration: none !important;
+	text-decoration: none!important;
+	letter-spacing: 2px!important;
 	font-size: 1em;
 	color: #fff;
 }
@@ -354,6 +371,39 @@ a.btnBlog:hover {
 	font-size: 1em;
 }
 
+.mark {
+	padding-left: .2em;
+    padding-right: .2em;
+    /*Effect*/
+    background: transparent;
+    background: linear-gradient(to right, #fca1d2 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+	transition-timing-function: ease-in;
+	transition-duration: .25s;
+}
+
+.mark.active {
+	background-position:left bottom;
+ 	transition-delay: 1s;
+ 	transition-timing-function: ease-in;
+ 	transition-duration: 1.5s;
+}
+/*
+.fadein { 
+	opacity: 0;
+	transform: translateY(5px);
+}
+
+.fadein.active {
+	opacity: 1;
+	transform: translateY(-5px);
+	transition-delay: .5s;
+	transition-timing-function: ease-in;
+	transition-duration: .5s;
+  	
+}
+*/
 /*Unique elements*/
 
 #hero {
@@ -455,6 +505,10 @@ a.btnBlog:hover {
 
 	section {
 		width: calc(100% - 2em);
+	}
+
+	a.btn {
+		min-width: none;
 	}
 
 	.showcaseBook img {
