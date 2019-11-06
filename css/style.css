@@ -420,21 +420,24 @@ a.btnBlog:hover {
 	width: 50px;
 }
 
-.topLeft {
-	top: 0;
+.topLeft, .topRight, .bottomRight, .bottomLeft {
+	bottom: 0;
 	left: 0;
+	transition-duration: 1s;
+ 	transition-timing-function: ease-in;
+}
+
+.topLeft {
+	transform: translate(0vw, calc(-100vh + 50px));
 }
 .topRight {
-	top: 0;
-	right: 0;
+	transform: translate(calc(100vw - 50px - 17px), calc(-100vh + 50px));
 }
 .bottomRight {
-	bottom: 0;
-	right: 0;
+	transform: translate(calc(100vw - 50px - 17px), 0vh);
 }
 .bottomLeft {
-	bottom: 0;
-	left: 0;
+	transform: translate(0vw, 0vh);
 }
 
 #webdev {
