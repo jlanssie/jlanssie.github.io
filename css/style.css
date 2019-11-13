@@ -509,6 +509,7 @@ a.btnBlog:hover {
 	}
 
 	#grrrrr {
+		display: block;
 		position: fixed;
 		height: 50px;
 		width: 50px;
