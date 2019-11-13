@@ -1,33 +1,43 @@
-/*Copyright notice automatically updated to the current year */
+/*copyright notice automatically updated to the current year*/
 
 $(document).ready(function () {
   var a = (new Date().getFullYear()>2010) ? new Date().getFullYear() : "2010"
   $("div.copyright").html("&copy; "+ a + " Jeremy Lanssiers");
 });
 
-/*Change tracks*/
+/*change tracks*/
 
 $(document).ready(function () {
 
-  //Track content
+  /*set track content*/
 
   var track1Quotes = ["gaga","red-hot","wacky","rabid","keen"];
   var track2Quotes = ["wannabe paperback writer","homo journalisticus","pencil-handler","tinker","walking philosopher","fox on the run"];
   var track3Quotes = ["with fruity","with cool","with hip","with fresh","with askew", "with wild"];
   var track4Quotes = ["ideas","opinions","theories","views","suspicions"];
 
-  //Loop counter
+  /*init counter*/
 
   var m1 = 0;
   var m2 = 0;
   var m3 = 0;
   var m4 = 0;
 
-  //Call the changeText() function every XXXX miliseconds.
+  /*set default content*/
+
+  document.getElementById("1").innerHTML=(track1Quotes[m1]);
+  document.getElementById("2").innerHTML=(track2Quotes[m1]);
+  document.getElementById("3").innerHTML=(track3Quotes[m1]);
+  document.getElementById("4").innerHTML=(track4Quotes[m1]);
+
+  /*set track change frequency*/
 
   setInterval(changeTrack1, 5500);
+  setInterval(changeTrack2, 2000);
+  setInterval(changeTrack3, 6500);
+  setInterval(changeTrack4, 4500);
 
-  //Change track content
+  /*change track content*/
 
   function changeTrack1(){
       document.getElementById("1").innerHTML=(track1Quotes[m1]);
@@ -37,8 +47,6 @@ $(document).ready(function () {
           m1++;
   };
 
-  setInterval(changeTrack2, 2000);
-
   function changeTrack2(){
       document.getElementById("2").innerHTML=(track2Quotes[m2]);
       if(m2 == 4)
@@ -47,8 +55,6 @@ $(document).ready(function () {
           m2++;
   };
 
-  setInterval(changeTrack3, 6500);
-
   function changeTrack3(){
       document.getElementById("3").innerHTML=(track3Quotes[m3]);
       if(m3 == 4)
@@ -56,8 +62,6 @@ $(document).ready(function () {
       else
           m3++;
   };
-
-  setInterval(changeTrack4, 4500);
 
   function changeTrack4(){
       document.getElementById("4").innerHTML=(track4Quotes[m4]);
@@ -68,7 +72,7 @@ $(document).ready(function () {
   };
 });
 
-/*Move the great annoyer*/
+/*move the great annoyer*/
 
 function annoyMe(){
   var annoyer = document.getElementById('grrrrr');
@@ -93,7 +97,7 @@ function annoyMe(){
     }
 };
 
-/*Animate heading underlines*/
+/*animations*/
 
 $(document).ready(function () {
   var titles = document.querySelectorAll("h1, .mark, fadein");
@@ -109,7 +113,7 @@ $.fn.isInViewport = function() {
   var elementBottom = elementTop + $(this).outerHeight();
 
   var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + ($(window).height())/2;
+  var viewportBottom = viewportTop + ($(window).height())*0.75;
 
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
@@ -135,6 +139,7 @@ $(window).on('resize scroll', function() {
   });
 });
 */
+
 
 function randomizeCase(){
   var randomCaseTxts = document.querySelectorAll('.randomCaseTxt');

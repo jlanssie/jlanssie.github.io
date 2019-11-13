@@ -13,7 +13,7 @@ Author URI: https:www.jeremylanssiers.com
 	margin:0;
 }
 
-/*Default classes*/
+/*default classes*/
 
 html {
 	scroll-behavior: smooth;
@@ -21,7 +21,7 @@ html {
 
 body {
 	width: 100%;
-	background-color: #f70d8a;
+	background-color: #0daaf8;
 	font-family: Courier, Times, serif;
 	font-size: 1em;
 	color: #1f1f1f;
@@ -41,7 +41,7 @@ h1:before, h1:after {
 	display: block;
 	margin: .5em auto;
 	height: 5px;
-	background-color: #f70d8a;
+	background-color: #0df882;
 	content: "";
 }
 
@@ -60,6 +60,10 @@ h1.animated:after {
  	transition-duration: .5s;
  	transition-timing-function: ease-in;
  	transition-delay: .5s;
+}
+
+.sectionWrapper2 section h1:before, .sectionWrapper2 section h1:after {
+	background-color: #0daaf8 ;
 }
 
 h2 {
@@ -87,7 +91,7 @@ p {
 
 p::selection,
 p::-moz-selection {
-  background: #f70d8a;
+  background: #0daaf8;
 }
 
 a {
@@ -104,7 +108,7 @@ section {
 	clear:both;
 	margin: 0 auto;
 	padding:5vh 1em 0 1em;
-	width: calc(650px - 2em);
+	width: calc(100% - 2em);
 	background-color: inherit;
 	overflow:visible;
 }
@@ -123,11 +127,11 @@ footer {
 	clear:both;
 	display:inherit;
 	height:5em;
-	background-color: #f70d8a;
+	background-color: #0daaf8;
 	color: #fff;
 }
 
-/*Generic classes*/
+/*generic classes*/
 
 .left {
 	float:left;
@@ -154,7 +158,7 @@ footer {
 }
 
 .pink {
-	background-color: #f70d8a;
+	background-color: #0daaf8;
 }
 
 .black {
@@ -173,15 +177,19 @@ footer {
 	text-align: center;
 }
 
-/*Custom classes*/
+/*custom classes*/
 
 .track {
 	clear:right;
-	float:right;
+	float: none;
+	margin: 0 auto;
 	margin-top: 1em;
 	padding: 0.5em;
 	background-color: #222;
-	font-size: 2em;
+	width: fit-content;
+	width: -moz-fit-content;
+	text-align: center;
+	font-size: 1.5em;
 	color: #fff;
 }
 
@@ -201,15 +209,19 @@ footer {
 	clear:both;
 	width: 100%;
 	height: 10vh;
-	background-color: #f70d8a;
+	background-color: #0daaf8;
 }
 
 .mainContainer {
 	background-color: #fff;
 }
 
+.sectionWrapper, .sectionWrapper2 {
+	min-height: 100vh;
+}
+
 .sectionWrapper2 {
-	background-color: #fafafa;
+	background-color: #fff295;
 }
 
 .subSectionSeparator {
@@ -232,7 +244,7 @@ a.btn {
 	padding: 0.5em;
 	width: fit-content;
 	width: -moz-fit-content;
-	min-width: 290px;
+	min-width: none;
 	background-color: #222;
 	text-align: center;
 	text-decoration: none!important;
@@ -242,8 +254,12 @@ a.btn {
 }
 
 a.btn:hover {
-	background-color: #f70d8a;
+	background-color: #0df882;
 	color: #222;
+}
+
+.sectionWrapper2 section a.btn:hover {
+	background-color: #0daaf8;
 }
 
 .title {
@@ -297,7 +313,7 @@ a.btn:hover {
 
 .showcaseBook img {
 	margin-right: 1em;
-	width: calc(100vw/5);
+	width: calc(100vw/2);
 }
 
 .showcaseBook h3, h4, .wrapper p {
@@ -314,7 +330,7 @@ a.btnBook, a.btnBlog {
 
 a.btnBook {
 	color: #222;
-	background-color: #f70d8a;
+	background-color: #0daaf8;
 }
 
 a.btnBlog {
@@ -355,9 +371,10 @@ a.btnBlog:hover {
 	text-decoration: underline;
 }
 
-.social {
-	float: left;
-	padding: 2em;
+.social, .copyright {
+	float: none;
+	padding: 1em 1em 0 1em;
+	text-align: center;
 	font-size: 1em;
 }
 
@@ -365,18 +382,12 @@ a.btnBlog:hover {
 	vertical-align: middle;
 }
 
-.copyright {
-	padding: 2em;
-	text-align: right;
-	font-size: 1em;
-}
-
 .mark {
 	padding-left: .2em;
     padding-right: .2em;
     /*Effect*/
     background: transparent;
-    background: linear-gradient(to right, #fca1d2 50%, transparent 50%);
+    background: linear-gradient(to right, #fff295 50%, transparent 50%);
     background-size: 200% 100%;
     background-position:right bottom;
 	transition-timing-function: ease-in;
@@ -404,61 +415,65 @@ a.btnBlog:hover {
   	
 }
 */
-/*Unique elements*/
+/*unique elements*/
 
 #hero {
 	padding:10vh 20vw 0 20vw;
 	min-height: calc(100vh - 10vh);
-	background-color: #f70d8a;
+	background-color: #0daaf8;
 	overflow:visible;
 	z-index:1;
-}
-
-#grrrrr {
-	position: fixed;
-	height: 50px;
-	width: 50px;
-}
-
-.topLeft, .topRight, .bottomRight, .bottomLeft {
-	bottom: 0;
-	left: 0;
-	transition-duration: 1s;
- 	transition-timing-function: ease-in;
-}
-
-.topLeft {
-	transform: translate(0vw, calc(-100vh + 50px));
-}
-.topRight {
-	transform: translate(calc(100vw - 50px - 17px), calc(-100vh + 50px));
-}
-.bottomRight {
-	transform: translate(calc(100vw - 50px - 17px), 0vh);
-}
-.bottomLeft {
-	transform: translate(0vw, 0vh);
 }
 
 #webdev {
 	padding-bottom: 5vh;
 }
 
-@media screen and (max-width: 665px){
-
-	#hero {
-		padding:5vh 10vw 0 10vw;
-		min-height: calc(100vh - 5vh);
-	}
-
+@media (min-width: 576px) {
 	.track {
-		font-size: 1.5em;
+		clear:right;
+		float:right;
+		margin-top: 1em;
+		padding: 0.5em;
+		background-color: #222;
+		font-size: 2em;
+		color: #fff;
 	}
 
 	section {
 		width: calc(100% - 2em);
 	}
 
+	a.btn {
+		min-width: 290px;
+	}
+
+	.showcaseBook img {
+		width: calc(100vw/5);
+	}
+
+	.social {
+		float: left;
+		padding: 2em;
+		font-size: 1em;
+	}
+
+	.copyright {
+		padding: 2em;
+		text-align: right;
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 768px) {
+	#hero {
+		padding:5vh 10vw 0 10vw;
+		min-height: calc(100vh - 5vh);
+	}
+
+	section {
+		width: calc(650px - 2em);
+	}
 
 	h1 {
 		font-size: 1.5em;
@@ -490,38 +505,38 @@ a.btnBlog:hover {
 	}
 
 	#grrrrr {
-		display: none;
+		position: fixed;
+		height: 50px;
+		width: 50px;
+	}
+
+	.topLeft, .topRight, .bottomRight, .bottomLeft {
+		bottom: 0;
+		left: 0;
+		transition-duration: 1s;
+	 	transition-timing-function: ease-in;
+	}
+
+	.topLeft {
+		transform: translate(0vw, calc(-100vh + 50px));
+	}
+	.topRight {
+		transform: translate(calc(100vw - 50px - 17px), calc(-100vh + 50px));
+	}
+	.bottomRight {
+		transform: translate(calc(100vw - 50px - 17px), 0vh);
+	}
+	.bottomLeft {
+		transform: translate(0vw, 0vh);
 	}
 }
 
-@media screen and (max-width: 413px){
 
-	.track {
-		float: none;
-		margin: 0 auto;
-		margin-top: 0px;margin-top: 1em;
-		width: fit-content;
-		width: -moz-fit-content;
-		text-align: center;
-		font-size: 1.5em;
-	}
+@media (min-width: 992px) {
+	
+}
 
-	section {
-		width: calc(100% - 2em);
-	}
 
-	a.btn {
-		min-width: none;
-	}
-
-	.showcaseBook img {
-		width: calc(100vw/2);
-	}
-
-	.social, .copyright {
-		float: none;
-		padding: 1em 1em 0 1em;
-		text-align: center;
-		font-size: 1em;
-	}
+@media (min-width: 1200px) {
+	
 }
