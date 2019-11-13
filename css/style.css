@@ -296,6 +296,10 @@ a.btn:hover {
 	background-color: #fff;
 }
 
+#grrrrr {
+	display: none;
+}
+
 #imdb {
 	padding-bottom: calc(80px - 43.19px );
 }
