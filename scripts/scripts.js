@@ -23,13 +23,6 @@ $(document).ready(function () {
   var m3 = 0;
   var m4 = 0;
 
-  /*set default content*/
-
-  document.getElementById("1").innerHTML=(track1Quotes[m1]);
-  document.getElementById("2").innerHTML=(track2Quotes[m1]);
-  document.getElementById("3").innerHTML=(track3Quotes[m1]);
-  document.getElementById("4").innerHTML=(track4Quotes[m1]);
-
   /*set track change frequency*/
 
   setInterval(changeTrack1, 5500);

@@ -69,7 +69,7 @@ h1.animated:after {
 h2 {
 	text-align: center;
 	font-size: 1.5em;
-	color: #fff;
+	color: #1f1f1f;
 }
 
 h3 {
@@ -157,12 +157,16 @@ footer {
 	margin-top: 2.5vh;
 }
 
-.pink {
-	background-color: #0daaf8;
-}
-
 .black {
 	background-color: #222;
+}
+
+.green {
+	background-color: #0df882;
+}
+
+.blue {
+	background-color: #0daaf8;
 }
 
 .blackTxt {
@@ -245,21 +249,17 @@ a.btn {
 	width: fit-content;
 	width: -moz-fit-content;
 	min-width: none;
-	background-color: #222;
+	background-color: #0daaf8;
 	text-align: center;
 	text-decoration: none!important;
 	letter-spacing: 2px!important;
 	font-size: 1em;
-	color: #fff;
-}
-
-a.btn:hover {
-	background-color: #0df882;
 	color: #222;
 }
 
-.sectionWrapper2 section a.btn:hover {
-	background-color: #0daaf8;
+a.btn:hover {
+	background-color: #000;
+	color: #fff;
 }
 
 .title {
@@ -270,7 +270,7 @@ a.btn:hover {
 .socialWrapper {
 	margin-top: calc(5vh - 1em);
 	padding: 1em;
-	background-color: #222;
+	background-color: #0df882;
     text-align: center;
 }
 
@@ -279,21 +279,21 @@ a.btn:hover {
 	margin: .75em;
     width: 80px;
     height: 80px;
-    border: 5px solid #fff;
+    border: 5px solid #000;
     padding: 5px;
-    background-color: #222;
+    background-color: #0df882;
 }
 
 .socialWrapper li a svg g path, .socialWrapper li a svg path, .socialWrapper li a svg circle {
-	fill:#fff;
+	fill:#000;
 }
 
 .socialWrapper li:hover a svg g path, .socialWrapper li:hover a svg path, .socialWrapper li:hover a svg circle {
-	fill:#222;
+	fill:#0df882;
 }
 
 .socialWrapper li:hover {
-	background-color: #fff;
+	background-color: #000;
 }
 
 #grrrrr {
@@ -354,12 +354,11 @@ a.btnBlog:hover {
 .showcaseList {
 	margin-top: 5vh;
 	padding: 1em;
-	background: #222;
-	color: #fff;
+	color: #222;
 }
 
 .showcaseList a {
-	color:#fff;
+	color:#222;
 	text-decoration-line: none;
 }
 
