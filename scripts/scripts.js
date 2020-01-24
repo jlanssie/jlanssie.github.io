@@ -25,10 +25,10 @@ $(document).ready(function () {
 
   /*set track change frequency*/
 
-  setInterval(changeTrack1, 5500);
-  setInterval(changeTrack2, 2000);
-  setInterval(changeTrack3, 6500);
-  setInterval(changeTrack4, 4500);
+  setInterval(changeTrack1, 4200);
+  setInterval(changeTrack2, 2400);
+  setInterval(changeTrack3, 5600);
+  setInterval(changeTrack4, 3800);
 
   /*change track content*/
 
