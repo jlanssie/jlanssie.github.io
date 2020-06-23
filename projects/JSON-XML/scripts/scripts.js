@@ -1,4 +1,4 @@
-//----- OUTPUT FROM JS -----//
+//----- 1. OUTPUT FROM JS -----//
 
 //Set content
 var content1 = [
@@ -7,7 +7,7 @@ var content1 = [
   { "firstName":"Peter", "lastName":"Jones" }
 ];
 
-//Define content treatment
+//Define content handling
 function printFromJS(item) {
   document.getElementById("JSoutput").innerHTML += item.firstName + " " + item.lastName + "<br>";
 }
@@ -17,15 +17,21 @@ content1.forEach(printFromJS);
 
 
 
-//----- OUTPUT FROM JSON -----//
+//----- 2. OUTPUT FROM JSON -----//
 
+//Set proxy URL (only if crossdomain that does not send Cross-Origin Resource Sharing (CORS) headers)
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
-const url = "https://www.lamonnaie.be/files/test/test.json"; // site that doesn’t send Access-Control-*
+
+//Set data URL
+const url = "../data/test.json"; //URL that does not send Access-Control-*
+
+//Fetch response and contents, then call function that handles content
 fetch(proxyurl + url)
 .then(response => response.text())
 .then(contents => handleJSON(contents))
 .catch(() => console.log("Cannot access " + url + " response. Blocked by browser?"))
 
+//Define content handling
 function handleJSON(item){
 	var content2 = JSON.parse(item);
 	var length = content2.people.length;
@@ -37,31 +43,40 @@ function handleJSON(item){
 
 
 
-//----- OUTPUT FROM LOCAL XML -----//
+//----- 3. OUTPUT FROM LOCAL XML -----//
 
+//Set content
 var text = "<bookstore><book>" +
 "<title>Everyday Italian</title>" +
 "<author>Giada De Laurentiis</author>" +
 "<year>2005</year>" +
 "</book></bookstore>";
 
+//Init a parser, then parse content to XML
 var parser = new DOMParser();
 var xmlDoc = parser.parseFromString(text,"text/xml");
 
+//Handle content
 document.getElementById("XMLLocaloutput").innerHTML =
 xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
 
 
-//-----OUTPUT FROM EXTERNAL XML -----//
+//----- 4. OUTPUT FROM EXTERNAL XML -----//
 
+//Set proxy URL (only if crossdomain that does not send Cross-Origin Resource Sharing (CORS) headers)
 const proxyurl2 = "https://cors-anywhere.herokuapp.com/";
-const url2 = "https://www.lamonnaie.be/files/test/test.xml"; // site that doesn’t send Access-Control-*
+
+//Set data URL
+const url2 = "../data/test.xml"; //URL that does not send Access-Control-*
+
+//Fetch response and contents, then call function that handles content
 fetch(proxyurl2 + url2)
 .then(response => response.text())
 .then(contents => handleXML(contents))
 .catch(() => console.log("Cannot access " + url + " response. Blocked by browser?"))
 
+//Define content handling
 function handleXML(item) {
   var parser2 = new DOMParser();
   var xmlDoc = parser2.parseFromString(item,"text/xml");
@@ -72,28 +87,5 @@ function handleXML(item) {
     txt += x[i].childNodes[0].nodeValue + "<br>";
   }
 
-  document.getElementById("XMLExternaloutput").innerHTML = txt;
-
-}
-
-function loadXMLDoc() {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      myFunction(this);
-    }
-  };
-  xmlhttp.open("GET", "https://www.w3schools.com/xml/cd_catalog.xml", true);
-  xmlhttp.send();
-}
-
-function myFunction(xml) {
-  var x, i, xmlDoc, txt;
-  xmlDoc = xml.responseXML;
-  txt = "";
-  x = xmlDoc.getElementsByTagName("ARTIST");
-  for (i = 0; i< x.length; i++) {
-    txt += x[i].childNodes[0].nodeValue + "<br>";
-  }
   document.getElementById("XMLExternaloutput").innerHTML = txt;
 }
