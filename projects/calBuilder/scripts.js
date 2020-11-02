@@ -104,7 +104,7 @@ function download() {
 
 	// Start file download.
 	var fileName = showName + ".ics";
-	//createFile(fileName, content);
+	createFile(fileName, content);
 }
 
 window.onload = function() {
