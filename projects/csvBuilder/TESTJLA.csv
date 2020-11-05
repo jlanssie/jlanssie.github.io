@@ -1,0 +1,10 @@
+﻿Name,Section/Column,Assignee,Assignee Email,Start Date,Due Date,Subtask of
+TEST TASK NAME 1,Section 1,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-01-01,
+Subtask 1,,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-01-05,TEST TASK NAME 1
+Subtask 2,,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-01-12,TEST TASK NAME 1
+TEST TASK NAME 2,Section 2,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-02-01,
+Subtask 1,,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-02-05,TEST TASK NAME 2
+Subtask 2,,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-02-12,TEST TASK NAME 2
+TEST TASK NAME 3,Section 3,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-03-01,
+Subtask 1,,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-03-05,TEST TASK NAME 3
+Subtask 2,,Jeremy Lanssiers,j.lanssiers@lamonnaie.be,,2021-03-12,TEST TASK NAME 3

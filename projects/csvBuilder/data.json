@@ -1,0 +1,15 @@
+var calSetup = "Name,Section/Column,Assignee,Assignee Email,Due Date,Subtask of\n";
+
+var taskTemplate = "[TASKNAME],[SECTION],[ASSIGNEE],[DUE-DATE],\n";
+
+var subTaskTemplate = "[SUBTASKNAME],,[ASSIGNEE],[DUE-DATE],[TASKNAME]\n";
+
+var lore = "Lore, l.vandemeutter@demunt.be";
+var pieterb = "Pieter B, p.baert@lamonnaie.be";
+var pieterc = "Pieter C, p.claes@lamonnaie.be";
+var jeremy ="Jeremy, j.lanssiers@lamonnaie.be";
+var jasper = "Jasper, j.croonen@lamonnaie.be";
+var thomas = "Thomas, t.vandeursen@lamonnaie.be";
+var laura = "Laura, l.blendeman@lamonnaie.be"; 
+var pierre = "Pierre, p.stubbe@lamonnaie.be"; 
+var nina = "Nina, n.vandersmissen@lamonnaie.be";

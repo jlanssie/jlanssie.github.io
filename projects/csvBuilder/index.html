@@ -1,0 +1,22 @@
+<head>
+	<link href="./style.css" rel="stylesheet" media="all">
+	<script defer="" src="./data.json"></script>
+	<script defer="" src="./scripts.js" type="text/javascript"></script>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <div id="customElement" class="element center">
+      	<h1>CSV maker</h1>
+      </div>
+       <div class="element">
+        Name of the show: <input type="text" id="showName" value="Aida">
+      </div>
+      <div class="element">
+        Date of the premiere: <input type="date" id="premiereDate" placeholder="dd-mm-yyyy" value="">
+      </div>
+      <div class="element">
+        <button onclick="download()">Download CSV</button>
+      </div>
+  </main>
+</body>
