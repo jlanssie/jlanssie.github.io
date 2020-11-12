@@ -13,3 +13,4 @@ var thomas = "Thomas, t.vandeursen@lamonnaie.be";
 var laura = "Laura, l.blendeman@lamonnaie.be"; 
 var pierre = "Pierre, p.stubbe@lamonnaie.be"; 
 var nina = "Nina, n.vandersmissen@lamonnaie.be";
+var none = ",";
