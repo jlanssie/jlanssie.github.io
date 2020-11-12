@@ -4,13 +4,13 @@ var taskTemplate = "[TASKNAME],[SECTION],[ASSIGNEE],[DUE-DATE],\n";
 
 var subTaskTemplate = "[SUBTASKNAME],,[ASSIGNEE],[DUE-DATE],[TASKNAME]\n";
 
-var lore = "Lore, l.vandemeutter@demunt.be";
-var pieterb = "Pieter B, p.baert@lamonnaie.be";
-var pieterc = "Pieter C, p.claes@lamonnaie.be";
+var lore = "Lore, l.vandemeutter@lamonnaie.be";
+var pieterb = "Pieter B, p.baert@demunt.be";
+var pieterc = "Pieter C, p.claes@demunt.be";
 var jeremy ="Jeremy, j.lanssiers@lamonnaie.be";
 var jasper = "Jasper, j.croonen@lamonnaie.be";
 var thomas = "Thomas, t.vandeursen@lamonnaie.be";
-var laura = "Laura, l.blendeman@lamonnaie.be"; 
+var laura = "Laura, l.blendeman@demunt.be"; 
 var pierre = "Pierre, p.stubbe@lamonnaie.be"; 
 var nina = "Nina, n.vandersmissen@lamonnaie.be";
 var none = ",";
